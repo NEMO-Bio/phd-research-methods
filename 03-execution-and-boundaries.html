@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博士研究的工作方法与准则｜第三册：执行与边界</title>
+<meta name="description" content="一套适用于科研学习阶段、尤其面向 AI 时代研究生的研究工作方法与准则，涵盖学术听说读写、AI 协作、证据核验、论文生产、实验留痕与复盘。">
+<style>
+:root{
+  --coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63;
+  --blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;
+  --ink:#20201e;--gray:#756e66;--leader:#aaa198;--gridc:#e9e1d8;
+  --bg:#fbf8f3;--bg2:#fffdfa;--fg:var(--ink);--muted:#675f57;--rule:#ded6cd;
+  --shadow:0 1px 2px rgba(32,32,30,.05),0 10px 32px rgba(32,32,30,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,"Noto Serif CJK SC","Songti SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;--maxw:50rem;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;
+  --leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;
+  --powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);
+  --coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193;
+}}
+:root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
+:root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
+.box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
+.thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{border:1px solid var(--rule);border-radius:13px;background:var(--bg2);padding:1.05rem 1.15rem}.card h3{margin:.1rem 0 .45rem}.card p:last-child,.card ul:last-child{margin-bottom:0}.mode{border-top:4px solid var(--peri)}.mode.listen{border-color:var(--teal)}.mode.speak{border-color:var(--coral)}.mode.read{border-color:var(--peri)}.mode.write{border-color:var(--plum)}
+ .flow{display:flex;align-items:stretch;gap:.55rem;margin:1.7rem 0;max-width:var(--maxw)}.flow .step{flex:1;border:1px solid var(--rule);background:var(--bg2);border-radius:10px;padding:.75rem;text-align:center;font:700 .82rem/1.45 var(--sans)}.flow .step small{display:block;font-size:.92em;font-weight:450;color:var(--muted);margin-top:.25rem}.flow .arr{align-self:center;color:var(--leader);font-family:var(--sans)}
+.tablewrap{overflow:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:11px;background:var(--bg2);box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;font:.94rem/1.55 var(--sans)}th,td{text-align:left;vertical-align:top;padding:.72rem .82rem;border-bottom:1px solid var(--rule)}th{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--bg)}tr:last-child td{border-bottom:0}td:first-child{font-weight:700;white-space:nowrap}.table-note{font-size:.84rem;line-height:1.55;color:var(--muted);margin:-.7rem 0 1.5rem;padding:0 .15rem}
+.protocol{border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin:1.6rem 0;background:var(--bg2);box-shadow:var(--shadow)}.protocol .phead{padding:.9rem 1rem;background:var(--fg);color:var(--bg);font:750 .92rem/1.4 var(--sans)}.protocol .rows{display:grid;grid-template-columns:9rem 1fr}.protocol .rows>*{padding:.76rem .92rem;border-bottom:1px solid var(--rule)}.protocol .rows>:nth-last-child(-n+2){border-bottom:0}.protocol .when{font:750 .78rem/1.45 var(--sans);color:var(--rose);background:var(--bg)}.protocol .what{font-size:1rem}.protocol .what p:last-child,.protocol .what ul:last-child{margin-bottom:0}
+figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;padding:1rem;background:var(--bg2);box-shadow:var(--shadow)}figure svg{display:block;width:100%;height:auto}figcaption{font:12px/1.5 var(--sans);color:var(--muted);margin-top:.65rem;max-width:47rem}figcaption b{color:var(--fg)}
+.copyline{font:.92rem/1.62 var(--mono);white-space:pre-wrap;border-left:3px solid var(--leader);padding:.75rem .88rem;background:var(--bg);border-radius:0 8px 8px 0}
+.refs{font-size:.9rem;line-height:1.55}.refs ol{padding-left:1.7rem}.refs li{margin:.55rem 0}.venue{color:var(--muted)}.pdf{display:inline-block;font:800 .64rem/1.4 var(--sans);letter-spacing:.05em;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:.03rem .3rem;text-decoration:none;margin-left:.3rem}.web{color:var(--peri);border-color:var(--peri)}sup.c{font-size:.68em;color:var(--rose);font-weight:800}sup.c a{color:inherit;text-decoration:none}
+#tt{position:fixed;right:1rem;bottom:1rem;z-index:30;width:2.55rem;height:2.55rem;border:1px solid var(--rule);border-radius:50%;background:var(--bg2);color:var(--fg);box-shadow:var(--shadow);cursor:pointer;font-size:1rem}
+.wrap{grid-template-areas:"toc cover" "toc main";row-gap:0}.cover{grid-area:cover;max-width:var(--maxw);padding:2.7rem 0 0}.toc{grid-area:toc}main{grid-area:main;padding-top:0}
+@media(max-width:1000px){.wrap{grid-template-columns:1fr;grid-template-areas:"cover" "toc" "main";gap:0}.toc{position:static;max-height:none;border-bottom:1px solid var(--rule);margin-bottom:1rem;columns:2}.toc .brand,.toc h2{column-span:all}.flow{overflow:auto}.flow .step{min-width:8rem}.ctl{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{padding:0 1rem}h1{font-size:2.25rem}.parthead h2{font-size:1.8rem}.principles,.grid{grid-template-columns:1fr}.protocol .rows{grid-template-columns:1fr}.protocol .rows>*{border-bottom:1px solid var(--rule)}table{min-width:40rem}.toc{columns:auto;padding:1.2rem 0}.toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.45rem}.toc .part,.toc .subpart{grid-column:1/-1}}
+@media print{#tt,.toc{display:none}.wrap{display:block}main>*{max-width:none}}
+</style>
+
+<style>
+.toc .volume-list{list-style:none;padding:0;margin:0 0 1.25rem}.toc .volume-list a{display:block;padding:.45rem .55rem;margin:.25rem 0;border:1px solid var(--rule);border-radius:7px;font-weight:700;color:var(--muted);text-decoration:none}.toc .volume-list a:hover,.toc .volume-list a.current{color:var(--fg);border-color:var(--peri);background:var(--lavender)}.toc .toc-label{margin:1.3rem 0 .65rem}.pager{display:grid;grid-template-columns:1fr auto 1fr;gap:.8rem;align-items:center;border-top:1px solid var(--rule);margin:4.5rem 0 0;padding-top:1.2rem;font:700 .86rem/1.4 var(--sans)}.pager a{color:var(--fg);text-decoration:none}.pager a:last-child{text-align:right}.pager .pager-state{color:var(--muted);font-weight:500}.pager .disabled{visibility:hidden}
+@media(max-width:650px){.pager{grid-template-columns:1fr 1fr}.pager .pager-state{display:none}}
+</style>
+</head>
+<body>
+<button id="tt" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+<div class="wrap">
+<header class="cover">
+  <div class="eyebrow">博士研究的工作方法与准则</div>
+  <h1>第三册：执行与边界</h1>
+  <p class="sub">Part IV–V · 把方法放进日常，并持续校正它</p>
+  <p class="byline">三册手册中的一册 · 可从左侧切换，也可在文末前后翻阅</p>
+</header><nav class="toc" id="toc" aria-label="手册目录">
+  <div class="brand">AI-Native Research Methods</div>
+  <h2>三册导航</h2>
+  <ol class="volume-list"><li><a class="" href="index.html">第一册：基础框架</a></li><li><a class="" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="current" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ol>
+  <h2 class="toc-label">本册目录</h2>
+  <ol><li class="part">IV 执行系统</li><li><a href="#s21">21 多时间尺度</a></li><li><a href="#s22">22 五年发展</a></li><li><a href="#s23">23 评价仪表盘</a></li><li class="part">V 边界与开始</li><li><a href="#s24">24 何时不用 AI</a></li><li><a href="#s25">25 证据边界</a></li><li><a href="#refs">参考文献</a></li></ol>
+</nav><main>
+
+<div class="parthead"><div class="k">Part IV</div><h2>执行系统：让方法论进入每一天</h2><p>用触发器、固定产物和复盘证据维持运行。</p></div>
+
+<h2 id="s21"><span class="n">21</span>多时间尺度管理：不同周期回答不同问题</h2>
+<p class="lede">日记录事实，周恢复主线，月校准项目，季度检查能力，学期重写研究叙事。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>周期</th><th>核心问题</th><th>固定产物</th><th>不做什么</th></tr></thead>
+<tbody>
+<tr><td>每次活动后</td><td>刚才发生了什么，下一动作是什么？</td><td>带时间与链接的关环记录</td><td>依赖记忆稍后再补</td></tr>
+<tr><td>每日</td><td>今天哪个判断发生了变化？</td><td>实验日志与 5 分钟纸笔清场</td><td>只写完成事项</td></tr>
+<tr><td>每周</td><td>主问题前进了吗，为什么？</td><td>一页周叙事、下周唯一主问题、一次 teach-back</td><td>把所有未完成任务原样顺延</td></tr>
+<tr><td>每月</td><td>项目路径仍值得走吗？</td><td>项目 memo、关键图、风险表、导师对齐</td><td>只报喜不报失败机制</td></tr>
+<tr><td>每季度</td><td>我变成了怎样的研究者？</td><td>能力证据矩阵、复现抽查、停止与加码清单</td><td>用忙碌感代替能力证据</td></tr>
+<tr><td>每学期</td><td>这些工作构成什么研究叙事？</td><td>完整进展报告、公开 talk、网页 digest、下一学期合同</td><td>只用论文数量评价自己</td></tr>
+</tbody></table></div>
+
+<div class="box note"><span class="lbl">目标嵌套规则</span>
+<p><strong>学期目标</strong>必须是一项能力或研究主张；<strong>季度目标</strong>是使其成立的证据包；<strong>月目标</strong>是一个可审计里程碑；<strong>周目标</strong>是一个可交付闭环；<strong>每日动作</strong>是最小可运行步骤。下级不能清楚解释如何服务上级，就应删除或降级。</p></div>
+
+<h2 id="s22"><span class="n">22</span>五年发展：用阶段毕业测试代替时间自动升级</h2>
+<p class="lede">五年路线允许按项目阶段调整。进阶依据是独立性和作品证据。</p>
+
+<figure class="figbox" id="five-year-roadmap">
+<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 535">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#182230}.f1-h{font-size:25px;font-weight:700}.f1-t{font-size:19px;font-weight:700}.f1-b{font-size:15px}.f1-s{font-size:14px;fill:#536273}.f1-arrow{stroke:#8090a0;stroke-width:2;fill:none}</style>
+<rect width="1200" height="535" rx="24" fill="#fbfaf7"/>
+<text class="f1-h" x="40" y="48">五年不是五张日历，而是五次“毕业测试”</text>
+<text class="f1-s" x="40" y="78">阶段可快可慢。只有行为证据达到标准才进入下一阶段。</text>
+<rect x="40" y="150" width="208" height="258" rx="18" fill="#edf4ff" stroke="#ccd5df"/>
+<text class="f1-t" x="58" y="187">1 标准化</text>
+<text class="f1-s" x="58" y="216">训练焦点</text>
+<foreignObject x="58" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">把工作做得可追溯</div></foreignObject>
+<text class="f1-s" x="58" y="301">毕业测试</text>
+<foreignObject x="58" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">四周后能重跑自己的结果</div></foreignObject>
+<path class="f1-arrow" d="M252 264 H269"/>
+<path d="M263 258 L270 264 L263 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="276" y="150" width="208" height="258" rx="18" fill="#e8f7f1" stroke="#ccd5df"/>
+<text class="f1-t" x="294" y="187">2 独立执行</text>
+<text class="f1-s" x="294" y="216">训练焦点</text>
+<foreignObject x="294" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">独立推进一个子问题</div></foreignObject>
+<text class="f1-s" x="294" y="301">毕业测试</text>
+<foreignObject x="294" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能提出计划、执行并解释偏差</div></foreignObject>
+<path class="f1-arrow" d="M488 264 H505"/>
+<path d="M499 258 L506 264 L499 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="512" y="150" width="208" height="258" rx="18" fill="#fff3da" stroke="#ccd5df"/>
+<text class="f1-t" x="530" y="187">3 系统化</text>
+<text class="f1-s" x="530" y="216">训练焦点</text>
+<foreignObject x="530" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">形成领域地图与方法栈</div></foreignObject>
+<text class="f1-s" x="530" y="301">毕业测试</text>
+<foreignObject x="530" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能把多项工作组织成研究主线</div></foreignObject>
+<path class="f1-arrow" d="M724 264 H741"/>
+<path d="M735 258 L742 264 L735 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="748" y="150" width="208" height="258" rx="18" fill="#f7e8f6" stroke="#ccd5df"/>
+<text class="f1-t" x="766" y="187">4 原创</text>
+<text class="f1-s" x="766" y="216">训练焦点</text>
+<foreignObject x="766" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">提出可区分的新机制</div></foreignObject>
+<text class="f1-s" x="766" y="301">毕业测试</text>
+<foreignObject x="766" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能设计让竞争解释分胜负的检验</div></foreignObject>
+<path class="f1-arrow" d="M960 264 H977"/>
+<path d="M971 258 L978 264 L971 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="984" y="150" width="208" height="258" rx="18" fill="#feeae4" stroke="#ccd5df"/>
+<text class="f1-t" x="1002" y="187">5 迁移与领导</text>
+<text class="f1-s" x="1002" y="216">训练焦点</text>
+<foreignObject x="1002" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">把个人能力变成团队能力</div></foreignObject>
+<text class="f1-s" x="1002" y="301">毕业测试</text>
+<foreignObject x="1002" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能带人、教学并形成独立议程</div></foreignObject>
+<text class="f1-s" x="40" y="472">贯穿全部阶段的 6 项能力：问题感 / 论证与建模 / 证据与方法 / 执行与留痕 / 表达与协作 / 元认知</text>
+<text class="f1-s" x="40" y="500">进展矩阵共有 30 个“阶段 × 能力”证据格，季度复盘只更新有作品或行为证据的格子。</text>
+</svg>
+<figcaption>五个阶段由“规范化、独立执行、系统化、原创、迁移与领导”组成。贯穿阶段的 6 项能力形成 30 个证据格。数量由 <span class="m">analysis/framework_model.py</span> 生成；每格只接受作品、行为或可复现结果，不接受自我感觉。</figcaption>
+</figure>
+
+<div class="tablewrap"><table>
+<thead><tr><th>阶段</th><th>主训练</th><th>代表性作品</th><th>最容易误判</th></tr></thead>
+<tbody>
+<tr><td>1 规范化</td><td>日志、版本、三遍阅读、英语课程闭环、基础复现</td><td>可重跑项目、领域核心证据记录、短讲录像</td><td>把“适应环境”当成被动等待</td></tr>
+<tr><td>2 独立执行</td><td>自己拆解子问题、预判风险、管理反馈</td><td>独立子项目、月度 memo、组会完整答辩</td><td>把执行熟练误当选题独立</td></tr>
+<tr><td>3 系统化</td><td>连接多篇文献、多种方法和多个结果</td><td>领域地图、方法栈、主导论文或研究 essay</td><td>知识多但没有主张</td></tr>
+<tr><td>4 原创</td><td>提出新机制和区分性检验，承担高风险判断</td><td>原创研究主线、关键反例、外部学术交流</td><td>把新奇想法误当原创贡献</td></tr>
+<tr><td>5 迁移与领导</td><td>把隐性判断变成他人可学的过程，形成独立议程</td><td>连贯 dissertation、可复用资产、指导记录、未来计划</td><td>忙于带人而停止自己的深思</td></tr>
+</tbody></table></div>
+
+<h2 id="s23"><span class="n">23</span>评价仪表盘：衡量能力证据</h2>
+<p class="lede">论文阅读量、活动参与量和 AI 使用量记录的是投入，不能单独说明能力增长。</p>
+
+<div class="grid wide">
+  <div class="card"><h3>可追溯率</h3><p><span class="m">抽样可回到全文位置的主张 / 抽样主张</span>。月度随机抽查，不挑最有把握的。</p></div>
+  <div class="card"><h3>数字复现率</h3><p><span class="m">从干净环境成功重生的关键图表 / 抽查图表</span>。记录失败原因和修复时间。</p></div>
+  <div class="card"><h3>理解通过率</h3><p><span class="m">脱稿解释并通过三次追问的对象 / 抽查对象</span>。对象可以是论文、公式或自己的图。</p></div>
+  <div class="card"><h3>输入转化率</h3><p><span class="m">形成问题、决定、代码或输出的输入 / 深度输入</span>。不追求 100%，防止无目的囤积。</p></div>
+  <div class="card"><h3>反馈闭环率</h3><p><span class="m">已验证修改效果的反馈项 / 承诺处理的反馈项</span>。仅“改过了”不算闭环。</p></div>
+  <div class="card"><h3>失败复用率</h3><p><span class="m">改变后续流程的失败记录 / R0 与 R1 记录</span>。重点是减少同类无效失败。</p></div>
+</div>
+
+<p><span class="tag h">假设</span> 三个月后做一次随机抽查：重生一个旧结果，审读一篇核心论文，再回答一组现场问题。复现速度、证据边界和脱稿解释若没有改善，就删减记录模板或改变训练方法。</p>
+
+<div class="parthead"><div class="k">Part V</div><h2>边界与开始</h2><p>一套好系统既知道何时严格，也知道何时不值得增加摩擦。</p></div>
+
+<h2 id="s24"><span class="n">24</span>何时不用 AI，何时降低记录强度</h2>
+<p class="lede">AI 使用和留痕都应按学习目标、风险与未来复用价值调节。</p>
+
+<h3>先不用 AI 的情形</h3>
+<ul>
+  <li><strong>第一次诊断理解：</strong>需要知道自己究竟会不会时，先闭卷复述、推导或写方案。</li>
+  <li><strong>基础能力刻意练习：</strong>正在训练公式推导、代码阅读、英文表达或实验设计时，先独立完成一个版本。</li>
+  <li><strong>高度保密或敏感材料：</strong>未发表数据、个人信息、受协议限制的代码和合作内容，只有在许可与安全环境明确时使用。</li>
+  <li><strong>任务边界未知且错误代价高：</strong>先请导师、统计专家或领域专家确认问题，再让 AI 参与候选生成。</li>
+  <li><strong>真实人际互动：</strong>提问、困难沟通、合作协商和现场答辩不能外包。AI 可以排练，不能替你建立信任。</li>
+</ul>
+
+<h3>可以轻量记录的情形</h3>
+<p>低风险、可逆、自动保存且没有新判断的机械尝试不需要写成长篇日志。只保留最小指针：时间、版本、目的和结果位置。记录强度应随四项因素上升：不可逆性、结论重要度、复现难度、未来复用价值。</p>
+
+<div class="box caution"><span class="lbl">避免知识管理反客为主</span>
+<p>如果整理一条记录所需时间持续高于它帮助你恢复上下文、减少重复错误或支撑文章的价值，就删字段、改成自动捕获或降低频率。知识库应当服务研究，避免把维护本身变成第二个项目。</p></div>
+
+<h2 id="s25"><span class="n">25</span>证据边界：整套设计仍待检验</h2>
+<p class="lede">文献分别支持若干局部机制。“AI 原生听说读写五年体系”是本文提出的综合方案。</p>
+
+<p>自我调节学习、主动参与、认知外包、博士指导、论文阅读、学术笔记、科研表达与可复现研究分别有文献基础。它们能够支持许多局部判断，例如反馈循环重要、生成式活动比纯被动接收更有认知要求、AI 的帮助有任务边界、记录应当让结果可追溯。但没有一项研究直接检验了本文的整套五年方案。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>命题</th><th>当前证据</th><th>主要边界</th><th>你的检验</th></tr></thead>
+<tbody>
+<tr><td>输出能暴露理解缺口</td><td>主动与建构性学习框架、阅读讨论建议</td><td>多来自课程学习，不等于博士科研因果效应</td><td>比较纯阅读与 teach-back 后的一周保持、迁移和问答</td></tr>
+<tr><td>AI 把瓶颈推向核验和治理</td><td>职业写作实验、锯齿边界实验、知识工作者自报研究</td><td>任务与模型快速变化，科研情境并未被完全覆盖</td><td>跟踪 AI 有无介入时的速度、错误、复现与答辩表现</td></tr>
+<tr><td>留痕形成复利</td><td>实验本与可复现计算规范</td><td>过度记录会增加负担，最佳粒度因领域而异</td><td>记录恢复时间、复用次数、重复错误和维护成本</td></tr>
+<tr><td>自我塑造与导师培养要耦合</td><td>认知学徒制小样本研究、mentorship 综合报告</td><td>实验室文化和个人关系差异很大</td><td>季度比较“收到的培养”与“主动提取的训练”是否闭环</td></tr>
+</tbody></table></div>
+
+<div class="box open"><span class="lbl">会推翻或削弱本体系的观察</span>
+<p>如果连续两个季度，记录和输出练习没有提高旧结果复现、关键概念迁移、错误发现或现场答辩，同时显著挤压深度研究时间，就应缩小体系。如果 AI 直接生成与“先独立再用 AI”在长期理解和独立解决新问题上表现相当，也应降低前置独立步骤。方法论必须接受自己的证据标准。</p></div>
+
+<h2 id="refs">参考文献与方法来源</h2>
+<div class="refs">
+<ol>
+<li id="r-noy">Noy S, Zhang W. Experimental evidence on the productivity effects of generative artificial intelligence. <span class="venue"><i>Science</i> 381:187-192, 2023. DOI: 10.1126/science.adh2586.</span><a class="pdf" href="https://doi.org/10.1126/science.adh2586" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-dell">Dell'Acqua F, McFowland E III, Mollick E, et al. Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. <span class="venue"><i>Organization Science</i>, Articles in Advance, 2026. DOI: 10.1287/orsc.2025.21838.</span><a class="pdf" href="https://doi.org/10.1287/orsc.2025.21838" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-risko">Risko EF, Gilbert SJ. Cognitive offloading. <span class="venue"><i>Trends in Cognitive Sciences</i> 20:676-688, 2016. DOI: 10.1016/j.tics.2016.07.002.</span><a class="pdf" href="https://doi.org/10.1016/j.tics.2016.07.002" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-maher">Maher MA, Gilmore JA, Feldon DF, Davis TE. Cognitive apprenticeship and the supervision of science and engineering research assistants. <span class="venue"><i>Journal of Research Practice</i> 9(2):M5, 2013.</span><a class="pdf" href="https://jrp.icaap.org/index.php/jrp/article/view/354.html" target="_blank" rel="noopener">PDF</a></li>
+<li id="r-nasem">National Academies of Sciences, Engineering, and Medicine. <i>The Science of Effective Mentorship in STEMM</i>. <span class="venue">National Academies Press, 2019. DOI: 10.17226/25568.</span><a class="pdf" href="https://doi.org/10.17226/25568" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-chi">Chi MTH. Active-constructive-interactive: A conceptual framework for differentiating learning activities. <span class="venue"><i>Topics in Cognitive Science</i> 1:73-105, 2009. DOI: 10.1111/j.1756-8765.2008.01005.x.</span><a class="pdf" href="https://doi.org/10.1111/j.1756-8765.2008.01005.x" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-icap">Chi MTH, Wylie R. The ICAP framework: Linking cognitive engagement to active learning outcomes. <span class="venue"><i>Educational Psychologist</i> 49:219-243, 2014. DOI: 10.1080/00461520.2014.965823.</span><a class="pdf" href="https://doi.org/10.1080/00461520.2014.965823" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-freeman">Freeman S, Eddy SL, McDonough M, et al. Active learning increases student performance in science, engineering, and mathematics. <span class="venue"><i>PNAS</i> 111:8410-8415, 2014. DOI: 10.1073/pnas.1319030111.</span><a class="pdf" href="https://doi.org/10.1073/pnas.1319030111" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-panadero">Panadero E. A review of self-regulated learning: Six models and four directions for research. <span class="venue"><i>Frontiers in Psychology</i> 8:422, 2017. DOI: 10.3389/fpsyg.2017.00422.</span><a class="pdf" href="https://doi.org/10.3389/fpsyg.2017.00422" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-long">Long D, Magerko B. What is AI literacy? Competencies and design considerations. <span class="venue"><i>CHI 2020</i>. DOI: 10.1145/3313831.3376727.</span><a class="pdf" href="https://doi.org/10.1145/3313831.3376727" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-kasneci">Kasneci E, Seßler K, Küchemann S, et al. ChatGPT for good? On opportunities and challenges of large language models for education. <span class="venue"><i>Learning and Individual Differences</i> 103:102274, 2023. DOI: 10.1016/j.lindif.2023.102274.</span><a class="pdf" href="https://doi.org/10.1016/j.lindif.2023.102274" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-siegel">Siegel J. Research into practice: Teaching notetaking to L2 students. <span class="venue"><i>Language Teaching</i> 55:245-259, 2022. DOI: 10.1017/S0261444820000476.</span><a class="pdf" href="https://doi.org/10.1017/S0261444820000476" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-bourne">Bourne PE. Ten simple rules for making good oral presentations. <span class="venue"><i>PLoS Computational Biology</i> 3:e77, 2007. DOI: 10.1371/journal.pcbi.0030077.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.0030077" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-stern-structure">Stern DL. A talk is not a paper: How to structure an effective talk. <span class="venue"><i>How To Give a Talk</i>, updated 2022.</span><a class="pdf web" href="https://www.howtogiveatalk.com/blog/the-structure-of-an-effective-talk" target="_blank" rel="noopener">SNAPSHOT</a></li>
+<li id="r-stern-qa">Stern DL. Navigating the Q&amp;A. <span class="venue"><i>How To Give a Talk</i>.</span><a class="pdf web" href="https://www.howtogiveatalk.com/blog/navigating-the-qa" target="_blank" rel="noopener">SNAPSHOT</a></li>
+<li id="r-keshav">Keshav S. How to read a paper. <span class="venue"><i>ACM SIGCOMM Computer Communication Review</i> 37:83-84, 2007. DOI: 10.1145/1273445.1273458.</span><a class="pdf" href="https://doi.org/10.1145/1273445.1273458" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-carey">Carey MA, Steiner KL, Petri WA Jr. Ten simple rules for reading a scientific paper. <span class="venue"><i>PLoS Computational Biology</i> 16:e1008032, 2020. DOI: 10.1371/journal.pcbi.1008032.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1008032" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-nm-editorial">Nature Methods editors. What makes a Nature Methods paper. <span class="venue"><i>Nature Methods</i> 19:771-772, 2022. DOI: 10.1038/s41592-022-01558-4.</span><a class="pdf" href="https://doi.org/10.1038/s41592-022-01558-4" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-ncs-reviewers">Nature Computational Science editors. What reviewers request the most. <span class="venue"><i>Nature Computational Science</i> 6:317, 2026. DOI: 10.1038/s43588-026-00989-9.</span><a class="pdf" href="https://doi.org/10.1038/s43588-026-00989-9" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-mensh">Mensh B, Kording K. Ten simple rules for structuring papers. <span class="venue"><i>PLoS Computational Biology</i> 13:e1005619, 2017. DOI: 10.1371/journal.pcbi.1005619.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1005619" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-schnell">Schnell S. Ten simple rules for a computational biologist's laboratory notebook. <span class="venue"><i>PLoS Computational Biology</i> 11:e1004385, 2015. DOI: 10.1371/journal.pcbi.1004385.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1004385" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-sandve">Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. <span class="venue"><i>PLoS Computational Biology</i> 9:e1003285, 2013. DOI: 10.1371/journal.pcbi.1003285.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1003285" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-wilson">Wilson G, Bryan J, Cranston K, et al. Good enough practices in scientific computing. <span class="venue"><i>PLoS Computational Biology</i> 13:e1005510, 2017. DOI: 10.1371/journal.pcbi.1005510.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1005510" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-fair">Wilkinson MD, Dumontier M, Aalbersberg IJ, et al. The FAIR guiding principles for scientific data management and stewardship. <span class="venue"><i>Scientific Data</i> 3:160018, 2016. DOI: 10.1038/sdata.2016.18.</span><a class="pdf" href="https://doi.org/10.1038/sdata.2016.18" target="_blank" rel="noopener">DOI</a></li>
+<li id="r-pebble">Pebble Biofusion Workshop. The AI-native method: research with AI. <span class="venue">Normative course method supplied by the user.</span><a class="pdf web" href="https://pebble-biofusion.github.io/workshop/method" target="_blank" rel="noopener">SNAPSHOT</a></li>
+</ol>
+</div>
+
+<nav class="pager" aria-label="前后翻阅"><a href="02-four-core-trainings.html">← 第二册</a><span class="pager-state">第三册 · 执行与边界</span><span class="disabled">→</span></nav>
+</main>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  var toggle=document.getElementById('tt');
+  toggle.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    if(!cur){cur=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+    root.setAttribute('data-theme',cur==='dark'?'light':'dark');
+  });
+
+  var links=[].slice.call(document.querySelectorAll('#toc a[href^="#"]'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  function spy(){
+    var y=window.scrollY+150,best=0;
+    sections.forEach(function(s,i){if(s.offsetTop<=y){best=i;}});
+    links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+  }
+  addEventListener('scroll',spy,{passive:true});spy();
+
+})();
+</script>
+</body>
+</html>

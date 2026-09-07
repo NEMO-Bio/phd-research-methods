@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博士研究的工作方法与准则｜第二册：四项核心训练</title>
+<meta name="description" content="一套适用于科研学习阶段、尤其面向 AI 时代研究生的研究工作方法与准则，涵盖学术听说读写、AI 协作、证据核验、论文生产、实验留痕与复盘。">
+<style>
+:root{
+  --coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63;
+  --blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;
+  --ink:#20201e;--gray:#756e66;--leader:#aaa198;--gridc:#e9e1d8;
+  --bg:#fbf8f3;--bg2:#fffdfa;--fg:var(--ink);--muted:#675f57;--rule:#ded6cd;
+  --shadow:0 1px 2px rgba(32,32,30,.05),0 10px 32px rgba(32,32,30,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,"Noto Serif CJK SC","Songti SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;--maxw:50rem;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;
+  --leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;
+  --powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);
+  --coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193;
+}}
+:root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
+:root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
+.box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
+.thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{border:1px solid var(--rule);border-radius:13px;background:var(--bg2);padding:1.05rem 1.15rem}.card h3{margin:.1rem 0 .45rem}.card p:last-child,.card ul:last-child{margin-bottom:0}.mode{border-top:4px solid var(--peri)}.mode.listen{border-color:var(--teal)}.mode.speak{border-color:var(--coral)}.mode.read{border-color:var(--peri)}.mode.write{border-color:var(--plum)}
+ .flow{display:flex;align-items:stretch;gap:.55rem;margin:1.7rem 0;max-width:var(--maxw)}.flow .step{flex:1;border:1px solid var(--rule);background:var(--bg2);border-radius:10px;padding:.75rem;text-align:center;font:700 .82rem/1.45 var(--sans)}.flow .step small{display:block;font-size:.92em;font-weight:450;color:var(--muted);margin-top:.25rem}.flow .arr{align-self:center;color:var(--leader);font-family:var(--sans)}
+.tablewrap{overflow:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:11px;background:var(--bg2);box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;font:.94rem/1.55 var(--sans)}th,td{text-align:left;vertical-align:top;padding:.72rem .82rem;border-bottom:1px solid var(--rule)}th{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--bg)}tr:last-child td{border-bottom:0}td:first-child{font-weight:700;white-space:nowrap}.table-note{font-size:.84rem;line-height:1.55;color:var(--muted);margin:-.7rem 0 1.5rem;padding:0 .15rem}
+.protocol{border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin:1.6rem 0;background:var(--bg2);box-shadow:var(--shadow)}.protocol .phead{padding:.9rem 1rem;background:var(--fg);color:var(--bg);font:750 .92rem/1.4 var(--sans)}.protocol .rows{display:grid;grid-template-columns:9rem 1fr}.protocol .rows>*{padding:.76rem .92rem;border-bottom:1px solid var(--rule)}.protocol .rows>:nth-last-child(-n+2){border-bottom:0}.protocol .when{font:750 .78rem/1.45 var(--sans);color:var(--rose);background:var(--bg)}.protocol .what{font-size:1rem}.protocol .what p:last-child,.protocol .what ul:last-child{margin-bottom:0}
+figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;padding:1rem;background:var(--bg2);box-shadow:var(--shadow)}figure svg{display:block;width:100%;height:auto}figcaption{font:12px/1.5 var(--sans);color:var(--muted);margin-top:.65rem;max-width:47rem}figcaption b{color:var(--fg)}
+.copyline{font:.92rem/1.62 var(--mono);white-space:pre-wrap;border-left:3px solid var(--leader);padding:.75rem .88rem;background:var(--bg);border-radius:0 8px 8px 0}
+.refs{font-size:.9rem;line-height:1.55}.refs ol{padding-left:1.7rem}.refs li{margin:.55rem 0}.venue{color:var(--muted)}.pdf{display:inline-block;font:800 .64rem/1.4 var(--sans);letter-spacing:.05em;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:.03rem .3rem;text-decoration:none;margin-left:.3rem}.web{color:var(--peri);border-color:var(--peri)}sup.c{font-size:.68em;color:var(--rose);font-weight:800}sup.c a{color:inherit;text-decoration:none}
+#tt{position:fixed;right:1rem;bottom:1rem;z-index:30;width:2.55rem;height:2.55rem;border:1px solid var(--rule);border-radius:50%;background:var(--bg2);color:var(--fg);box-shadow:var(--shadow);cursor:pointer;font-size:1rem}
+.wrap{grid-template-areas:"toc cover" "toc main";row-gap:0}.cover{grid-area:cover;max-width:var(--maxw);padding:2.7rem 0 0}.toc{grid-area:toc}main{grid-area:main;padding-top:0}
+@media(max-width:1000px){.wrap{grid-template-columns:1fr;grid-template-areas:"cover" "toc" "main";gap:0}.toc{position:static;max-height:none;border-bottom:1px solid var(--rule);margin-bottom:1rem;columns:2}.toc .brand,.toc h2{column-span:all}.flow{overflow:auto}.flow .step{min-width:8rem}.ctl{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{padding:0 1rem}h1{font-size:2.25rem}.parthead h2{font-size:1.8rem}.principles,.grid{grid-template-columns:1fr}.protocol .rows{grid-template-columns:1fr}.protocol .rows>*{border-bottom:1px solid var(--rule)}table{min-width:40rem}.toc{columns:auto;padding:1.2rem 0}.toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.45rem}.toc .part,.toc .subpart{grid-column:1/-1}}
+@media print{#tt,.toc{display:none}.wrap{display:block}main>*{max-width:none}}
+</style>
+
+<style>
+.toc .volume-list{list-style:none;padding:0;margin:0 0 1.25rem}.toc .volume-list a{display:block;padding:.45rem .55rem;margin:.25rem 0;border:1px solid var(--rule);border-radius:7px;font-weight:700;color:var(--muted);text-decoration:none}.toc .volume-list a:hover,.toc .volume-list a.current{color:var(--fg);border-color:var(--peri);background:var(--lavender)}.toc .toc-label{margin:1.3rem 0 .65rem}.pager{display:grid;grid-template-columns:1fr auto 1fr;gap:.8rem;align-items:center;border-top:1px solid var(--rule);margin:4.5rem 0 0;padding-top:1.2rem;font:700 .86rem/1.4 var(--sans)}.pager a{color:var(--fg);text-decoration:none}.pager a:last-child{text-align:right}.pager .pager-state{color:var(--muted);font-weight:500}.pager .disabled{visibility:hidden}
+@media(max-width:650px){.pager{grid-template-columns:1fr 1fr}.pager .pager-state{display:none}}
+</style>
+</head>
+<body>
+<button id="tt" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+<div class="wrap">
+<header class="cover">
+  <div class="eyebrow">博士研究的工作方法与准则</div>
+  <h1>第二册：四项核心训练</h1>
+  <p class="sub">Part III · 听、说、读、写</p>
+  <p class="byline">三册手册中的一册 · 可从左侧切换，也可在文末前后翻阅</p>
+</header><nav class="toc" id="toc" aria-label="手册目录">
+  <div class="brand">AI-Native Research Methods</div>
+  <h2>三册导航</h2>
+  <ol class="volume-list"><li><a class="" href="index.html">第一册：基础框架</a></li><li><a class="current" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ol>
+  <h2 class="toc-label">本册目录</h2>
+  <ol><li class="part">III 四项核心训练</li><li class="subpart">听：在现场重建问题</li><li><a href="#s8">8 论证结构</a></li><li><a href="#s9">9 Seminar 与 Journal Club</a></li><li class="subpart">说：让研究成为共同对象</li><li><a href="#s10">10 科研表达</a></li><li><a href="#s11">11 未成形想法</a></li><li><a href="#s12">12 研究汇报</a></li><li><a href="#s13">13 English speaker</a></li><li class="subpart">读：从领域到证据</li><li><a href="#s14">14 领域雷达</a></li><li><a href="#s15">15 阅读合同</a></li><li><a href="#s16">16 逐图审证据</a></li><li><a href="#s17">17 读后转化与 AI</a></li><li class="subpart">写：从过程到论文</li><li><a href="#s18">18 研究过程写作</a></li><li><a href="#s19">19 方法论文证据门槛</a></li><li><a href="#s20">20 投稿前检查</a></li></ol>
+</nav><main>
+
+<div class="parthead"><div class="k">Part III · 听</div><h2>听：在现场重建研究问题</h2><p>博士阶段的“听”不只是接收信息，而是在课程、Seminar 与讨论中抓住问题、论证、证据和边界。</p></div>
+
+<h2 id="s8"><span class="n">8</span>听的基本方法：持续定位论证结构</h2>
+<p class="lede">成熟的听者持续判断“现在这句话在整场论证中做什么”。</p>
+
+<p><span class="tag d">设计</span> 所有课程、Seminar 与 Journal Club 都可围绕六项内容记录：问题、主张、方法、证据、边界，以及它与自己研究的关联。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>现场要抓住的对象</th><th>笔记问题</th></tr></thead>
+<tbody>
+<tr><td>问题</td><td>他真正想解决什么问题？为什么值得解决？</td></tr>
+<tr><td>主张</td><td>他希望我在结束时相信什么？结论的强度有多大？</td></tr>
+<tr><td>方法</td><td>哪种设计、模型或测量把问题变成可回答对象？</td></tr>
+<tr><td>证据</td><td>哪张图、哪个比较或哪段推导承担关键证明？</td></tr>
+<tr><td>边界</td><td>结论在哪些假设、数据或情境下成立？</td></tr>
+<tr><td>关联</td><td>它能改变我的哪个问题、方法或下一步？</td></tr>
+</tbody></table></div>
+
+<p>第二语言学术笔记同时消耗听辨、选择、编码和书写资源。综述建议简洁和生成式记录优先于逐字抄写，也指出显式训练、缩写与改述有帮助。中英混合速记可以作为提高现场效率的策略，成稿时再转成目标语言。<sup class="c"><a href="03-execution-and-boundaries.html#r-siegel">12</a></sup></p>
+
+<div class="box note"><span class="lbl">双通道笔记</span>
+<p>左侧写问题、主张、方法、证据和边界；右侧只写理解状态和下一步，例如没听懂、关键转折、替代解释、与自己课题的关联、可提出的问题。不要边听边把所有未知都交给 AI，那会让你失去对自己理解状态的判断。</p></div>
+
+<h2 id="s9"><span class="n">9</span>Seminar 与 Journal Club：带着区分性问题离场</h2>
+<p class="lede">听完以后，你应当能指出报告人的研究选择、证据边界和一个可以继续讨论的问题。</p>
+
+<div class="grid wide">
+  <div class="card"><h3>Seminar</h3><ul><li>课前看题目、摘要和报告人近两项工作。</li><li>开场五分钟定位“大问题和承诺”。</li><li>每张关键图写一句“它排除了什么”。</li><li>结束前形成一个可回答的问题，不把评论伪装成问题。</li><li>若高度相关，会后用 30 秒说明自己的连接点，再请教。</li></ul></div>
+  <div class="card"><h3>Journal Club</h3><ul><li>这里指文献汇报，以及组员之间的分享与讨论。</li><li>先让全组独立解释关键图，再读作者解释。</li><li>固定讨论：最强证据、最弱假设、替代解释、下一实验。</li><li>报告人负责组织问题，不负责替论文辩护。</li><li>会后把共识与争议写入本次汇报与讨论记录；AI 可扮演审稿人，但引用与批评必须回到全文。</li></ul></div>
+</div>
+
+<div class="box def"><span class="lbl">一个好问题的结构</span>
+<p class="copyline">确认理解：If I understood correctly, your result suggests X under condition Y.
+提出区分：Would A and B make different predictions when Z changes?
+要求边界：What observation would make you revise the interpretation?</p>
+</div>
+
+<p>提问的目标不是证明你聪明，而是减少共同不确定性。若问题来自自己课题，不要先讲两分钟背景。先给一行连接，再给一个可回答的问句。</p>
+
+<div class="parthead"><div class="k">Part III · 说</div><h2>说：让研究成为共同讨论的对象</h2><p>“说”把内部理解、未成形想法和已有结果交给他人检验；目标是清楚、可追问，也能经受反对意见。</p></div>
+
+<h2 id="s10"><span class="n">10</span>科研表达的基本方法：建立可复述的论证</h2>
+<p class="lede">成熟的 speaker 能让不同背景的人听清问题、证据和结论边界。</p>
+
+<p>经典的科研演讲建议反复强调受众、核心信息、逻辑故事、简化内容、练习和时间控制。<sup class="c"><a href="03-execution-and-boundaries.html#r-bourne">13</a></sup> David Stern 则把优秀 talk 看成与全场的对话，并提醒报告不是论文搬运。报告应从一般问题进入关键实验，再回到一般意义。<sup class="c"><a href="03-execution-and-boundaries.html#r-stern-structure">14</a></sup></p>
+
+<div class="box key"><span class="lbl">先写最后一句</span>
+<p>在做幻灯片前，写下听众第二天只能记住的一句话。每一页都必须回答：这页是否帮助那句话变得可信？若不能，就删除、放附录或改成会后材料。</p></div>
+
+<p><span class="tag d">设计</span> 一个成熟科研 speaker 需要五种可观察能力：按受众选择细节；用问题和张力组织故事；让图表承担证据；明确区分数据、解释和推测；把 Q&A 当作共同推理而不是防御。</p>
+
+<h2 id="s11"><span class="n">11</span>未成形的 idea：先把模糊直觉变成可讨论对象</h2>
+<p class="lede">半成品不需要伪装成结论，但必须整理到别人可以指出它哪里错。</p>
+
+<div class="protocol">
+  <div class="phead">把想法整理成可讨论的问题</div>
+  <div class="rows">
+    <div class="when">观察</div><div class="what">我观察到了什么现象、矛盾或失败？事实与直觉分开写。</div>
+    <div class="when">缺口</div><div class="what">现有解释为什么不够？真正的缺口是什么？</div>
+    <div class="when">可能机制</div><div class="what">我猜测的最小机制是什么？不要先堆完整宏大理论。</div>
+    <div class="when">可检验预测</div><div class="what">如果机制为真，什么可观察量应怎样变化？</div>
+    <div class="when">区分性检验</div><div class="what">哪项实验或分析能区分我的机制与最强替代解释？</div>
+    <div class="when">希望获得的反馈</div><div class="what">我现在希望对方评论哪一点：价值、逻辑、方法、可行性还是文献？</div>
+  </div>
+</div>
+
+<p>先在纸上用箭头、公式和极端情况推导，再用 90 秒讲一遍。AI 可以追问隐藏假设或模拟反对者，但第一次纸笔展开应来自你自己。这样才能区分“我没有语言”与“我没有模型”。</p>
+
+<h2 id="s12"><span class="n">12</span>研究汇报：围绕关键证据组织报告</h2>
+<p class="lede">报告需要为特定受众重新安排路径，不能直接投影论文的章节结构。</p>
+
+<div class="flow wide">
+  <div class="step">Why<small>现象与 stakes</small></div><div class="arr">→</div>
+  <div class="step">Gap<small>已有解释的张力</small></div><div class="arr">→</div>
+  <div class="step">Question<small>可回答的研究问句</small></div><div class="arr">→</div>
+  <div class="step">Strategy<small>为何这个设计能回答</small></div><div class="arr">→</div>
+  <div class="step">Evidence<small>一到三座关键山峰</small></div><div class="arr">→</div>
+  <div class="step">Meaning<small>结论、边界、下一步</small></div>
+</div>
+
+<ul>
+  <li><strong>一页一个认知任务：</strong>引出问题、解释设计、展示一个结果或收束含义。</li>
+  <li><strong>先说看什么，再出现图：</strong>告诉听众比较对象、预期方向和读图顺序。</li>
+  <li><strong>展示底层数据：</strong>关键结果尽量呈现分布、变异或个体点，不只放装饰性总结。</li>
+  <li><strong>每个结论带强度：</strong>“数据支持”“与之相容”“尚不能区分”是不同承诺。</li>
+  <li><strong>准备附录：</strong>方法细节、稳健性和替代分析供问答调用，不挤占主线。</li>
+</ul>
+
+<h3>Q&A 的五步</h3>
+<p><span class="m">复述问题 → 先给短答案 → 给证据或推理 → 说明边界 → 必要时承诺具体追查</span>。Stern 建议复述或重述问题，让全场参与；不知道时坦率说明，并把没有数据支持的外推明确标为推测。<sup class="c"><a href="03-execution-and-boundaries.html#r-stern-qa">15</a></sup></p>
+
+<h2 id="s13"><span class="n">13</span>English academic speaker：训练功能，不追求表演</h2>
+<p class="lede">先训练 intelligibility、structure 和 interaction。母语口音不属于评价目标。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>功能</th><th>可重复使用的句型骨架</th><th>训练方式</th></tr></thead>
+<tbody>
+<tr><td>定位问题</td><td><span class="m">The question we are trying to answer is...</span></td><td>每天把当天课题压成一句</td></tr>
+<tr><td>解释选择</td><td><span class="m">We chose X because it lets us distinguish...</span></td><td>为每个方法准备“为什么不是 Y”</td></tr>
+<tr><td>读图</td><td><span class="m">Focus first on... The comparison that matters is...</span></td><td>随机抽图，60 秒脱稿讲解</td></tr>
+<tr><td>校准结论</td><td><span class="m">This supports X, but does not yet rule out Y.</span></td><td>把过强结论改写成合适强度</td></tr>
+<tr><td>处理未知</td><td><span class="m">I do not know yet. The cleanest way to test it would be...</span></td><td>练习承认未知后给检验路径</td></tr>
+</tbody></table></div>
+
+<p><span class="tag d">设计</span> 每周循环一次四级练习：影子跟读一小段优秀 talk，复述一张自己的图，录制 3 分钟研究说明，最后做一次带追问的模拟 Q&A。让 AI 做听众和转写员，请它标出听不清与结构断点。修改后再录一次，保留前后版本，用真实可懂度驱动进步。</p>
+
+<div class="parthead"><div class="k">Part III · 读</div><h2>读：从领域问题到可检验的证据</h2><p>阅读不是积累摘要，而是建立领域判断，重建作者论证，并决定哪些证据值得进入自己的研究。</p></div>
+
+<h2 id="s14"><span class="n">14</span>领域雷达：先定义问题，再接收论文</h2>
+<p class="lede">判断前沿时，只保留可能改变当前问题的新证据。</p>
+
+<p><span class="tag d">设计</span> 用六条通道收集材料，但不要把收集量当作阅读量：</p>
+
+<div class="grid wide">
+  <div class="card"><h3>研究问题</h3><p>围绕正在研究的问句设置关键词、同义词和排除词。每个提醒都应指向一个真实决策。</p></div>
+  <div class="card"><h3>作者与团队</h3><p>追踪关键作者、实验室、开源仓库和博士论文。研究计划通常比单个关键词稳定。</p></div>
+  <div class="card"><h3>期刊与会议</h3><p>定期扫描核心期刊、会议和预印本分类，也看 Seminar 列表。这样可以发现尚未进入高引用网络的工作。</p></div>
+  <div class="card"><h3>引文网络</h3><p>从综述和种子论文向后读参考文献，向前追引用，再找使用相近方法但术语不同的研究。</p></div>
+  <div class="card"><h3>同行交流</h3><p>记录导师、同伴和报告人的推荐理由。一个带语境的推荐通常比算法推送更容易判断。</p></div>
+  <div class="card"><h3>反方材料</h3><p>专门寻找失败复现、方法批评、负结果和相反解释。知识库需要保留会让你改变主意的论文。</p></div>
+</div>
+
+<p>所有新材料先进入 <strong>Inbox</strong>，只做相关性筛选。需要用于当前决策的进入 <strong>Working set</strong>，奠基性全文进入 <strong>Canon</strong>。论文被写进比较表、证据记录、代码或稿件之后，才算进入 <strong>Synthesis</strong>。每周清空一次 Inbox，删掉不准备采取行动的条目。</p>
+
+<h2 id="s15"><span class="n">15</span>读前：先写阅读合同</h2>
+<p class="lede">同一篇论文不会因为你读得慢而自动变得有用。先写清这次阅读要支持什么判断。</p>
+
+<p>Carey、Steiner 和 Petri 把主动阅读的起点放在两个目标上：读者想得到什么，作者想完成什么。作者目标可以先从论文类型判断。方法论文、资源论文、研究论文、综述和评论文章承担的任务不同，不能用同一张评分表阅读。期刊对各部分的写作要求也能帮助读者判断题目、摘要、方法、结果和讨论分别在做什么。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>这次为什么读</th><th>先看哪里</th><th>读到什么程度可以停</th><th>留下什么</th></tr></thead>
+<tbody>
+<tr><td>判断是否相关</td><td>题目、摘要、图表、结论、参考文献</td><td>能说明它是否会改变当前问题</td><td>纳入或排除的理由</td></tr>
+<tr><td>进入陌生领域</td><td>引言、讨论、综述、术语和关键引文</td><td>能画出问题、主要路线和争议</td><td>领域地图与待补原始文献</td></tr>
+<tr><td>采用一种方法</td><td>方法、补充材料、代码、参数、验证数据</td><td>能判断本地条件是否满足，并跑通最小例子</td><td>适用条件、失败模式与复现记录</td></tr>
+<tr><td>核验一项主张</td><td>承担主张的图表，再回到方法与统计</td><td>能区分数据直接支持、作者解释和外推</td><td>主张与证据的对应关系</td></tr>
+<tr><td>Journal club 或审稿</td><td>全文、补充材料、相关基线与关键原始数据</td><td>能给出替代解释、边界和下一项区分性检验</td><td>一页审读意见</td></tr>
+</tbody></table></div>
+
+<div class="box def"><span class="lbl">阅读合同</span>
+<p class="copyline">我为什么在今天读这篇：
+它是什么类型的论文：
+作者希望读者接受什么：
+我需要核验的主张或方法：
+这次阅读将影响哪个决定：
+最低产物与停止条件：</p></div>
+
+<p>接着判断每个部分的功能。题目和摘要给出作者选择的主结论，引言说明问题与研究策略，方法描述实际操作，结果呈现经过选择和组织的数据，讨论负责解释、限制与外推。结果部分的语气可能更客观，但图、比较和叙述顺序仍然经过作者选择。阅读时要保留这层距离。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+
+<h2 id="s16"><span class="n">16</span>读中：逐图审证据，六问要问到每个 panel</h2>
+<p class="lede">读原始研究时，正文帮助你理解证据，图表才是需要独立检查的对象。</p>
+
+<p>Carey 等人建议对整篇论文、每个实验和每张图重复六个问题。这个做法比写一段摘要更有用，因为它把研究动机、操作、结果和作者解释拆开了。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+
+<div class="protocol">
+  <div class="phead">六问证据审计</div>
+  <div class="rows">
+    <div class="when">1 想知道什么</div><div class="what">研究问题是什么？作者为何认为现有证据还不够？</div>
+    <div class="when">2 实际做了什么</div><div class="what">样本、变量、对照、测量、模型和分析分别是什么？</div>
+    <div class="when">3 为何这样做</div><div class="what">这个设计排除了什么解释？相对领域惯例，它改变了什么？</div>
+    <div class="when">4 数据显示什么</div><div class="what">先只描述图上可见的差异、分布和不确定性，不复述作者结论。</div>
+    <div class="when">5 作者如何解释</div><div class="what">解释需要哪些假设？数据是否也允许另一种解释？</div>
+    <div class="when">6 下一步是什么</div><div class="what">哪项实验、数据或推导最能区分当前解释与最强替代解释？先写自己的答案，再看作者建议。</div>
+  </div>
+</div>
+
+<div class="box def"><span class="lbl">单图审计顺序</span>
+<p><span class="m">问题 → 数据来源 → 横纵轴与单位 → 样本和比较组 → 原始点或分布 → 不确定性 → 统计对象 → 方法细节 → 直接结论 → 替代解释 → 适用边界</span></p></div>
+
+<p>任何一步说不清，都回到方法、图注、补充材料或被引用的原始方法论文。不要用“图看起来很明显”代替样本量、效应大小和变异，也不要把统计显著写成机制已经成立。</p>
+
+<h3>把批判性阅读和挑错分开</h3>
+<p>论文经过发表仍可能受测量限制、选择偏差、混杂、统计功效和适用范围影响。批判性阅读因此要检查替代解释，也要检查自己的确认偏误。与此同时，措辞生硬、漏引一篇文章或图号写错，并不自动削弱科学结论。Carey 等人把“批判”与“善意”并列：先判断问题是否影响证据，再决定它在评价中占多大权重。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+
+<h3>深度按风险升级</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>层级</th><th>认知任务</th><th>产物</th></tr></thead>
+<tbody>
+<tr><td>Pass 0</td><td>写阅读合同，说明要支持的判断</td><td>目的和停止条件</td></tr>
+<tr><td>Pass 1</td><td>用 Keshav 的类别、语境、正确性初判、贡献和清晰度建立鸟瞰</td><td>去留决定与五个 C</td></tr>
+<tr><td>Pass 2</td><td>逐图回答六问，核对方法、样本、比较和统计</td><td>证据记录与图表审计</td></tr>
+<tr><td>Pass 3</td><td>在作者假设下虚拟重做；必要时重推公式、运行代码或重做关键分析</td><td>复现记录、差异解释和可迁移模块</td></tr>
+</tbody></table></div>
+<p class="table-note">Keshav 的三遍法提供深度阶梯，Carey 等人的六问把第二、三遍变成可执行的证据检查。<sup class="c"><a href="03-execution-and-boundaries.html#r-keshav">16</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+
+<h2 id="s17"><span class="n">17</span>读后：讨论、连接、复现与 AI</h2>
+<p class="lede">一篇论文只有改变了一项判断、一个实验或一种解释，才完成从输入到研究的转换。</p>
+
+<p>Carey 等人的最后三条建议要求读者走出正文：补读术语、补充材料和关键引文；向同伴讲论文，让表达暴露理解缺口；把论文接到已有知识和自己的研究上。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup> 这三步可以压成一个固定的读后动作：</p>
+
+<div class="flow wide">
+  <div class="step">补齐<small>术语、方法、补充材料</small></div><div class="arr">→</div>
+  <div class="step">复述<small>脱稿回答六问</small></div><div class="arr">→</div>
+  <div class="step">对照<small>最强替代解释</small></div><div class="arr">→</div>
+  <div class="step">连接<small>旧论文与当前项目</small></div><div class="arr">→</div>
+  <div class="step">行动<small>代码、实验、讨论或写作</small></div>
+</div>
+
+<h3>读 review：先取地图，再回到原始研究</h3>
+<p>读综述时先看范围、检索截止时间、纳入标准和作者如何组织领域。提取术语、方法家族、共识、冲突和空白以后，对与你项目直接相关的结论抽样回到原始全文。再沿综述做向前检索，补上截止日期后的证据。综述适合建立结构，不适合替代承载关键主张的原始研究。</p>
+
+<h3>AI 可以加速补齐和对照，不能替你给论文定案</h3>
+<div class="protocol">
+  <div class="phead">一篇论文的 AI 使用顺序</div>
+  <div class="rows">
+    <div class="when">读前</div><div class="what">让 AI 根据标题、摘要和你的背景解释术语、列先修知识、生成候选问题。阅读合同由你写。</div>
+    <div class="when">Pass 1 后</div><div class="what">先写自己的五个 C，再与 AI 版本对照。分歧进入待核验清单，不能由语言流畅度决定谁对。</div>
+    <div class="when">Pass 2 中</div><div class="what">只提交具体公式、图注或方法段，请 AI 逐项解释并给极端情况。随后自己在纸上重推，回到原文核对。</div>
+    <div class="when">Pass 2 后</div><div class="what">让 AI 提出替代解释、遗漏控制和可能的过度外推。每条批评都要指向图、方法、数据或另一篇全文。</div>
+    <div class="when">Pass 3 后</div><div class="what">关掉论文和 AI，口头回答六问，画出关键图的逻辑，再接受追问。无法解释的地方重新进入阅读队列。</div>
+  </div>
+</div>
+
+<div class="box note"><span class="lbl">Evidence card</span>
+<p class="copyline">完整书目信息、版本与本地全文：
+阅读目标 / 作者目标 / 论文类型：
+六问答案：
+核心主张与结论强度：
+逐图证据、样本、方法和比较：
+关键数字的原文位置或复现脚本：
+作者解释 / 我的解释 / 最强替代解释：
+适用边界与尚未核验处：
+与已有论文及本项目的连接：
+下一动作：
+我能否脱稿讲清并回答追问：是 / 否 / 部分</p></div>
+
+<div class="parthead"><div class="k">Part III · 写</div><h2>写：让研究过程留下证据并形成论证</h2><p>写作从实验记录和推理草稿开始，经过决策与图表组织，最后才形成可以提交、复现和审读的论文。</p></div>
+
+<h2 id="s18"><span class="n">18</span>研究过程写作：记录、推理与决策</h2>
+<p class="lede">论文只是写作链条的最后一段。此前的记录决定了你有没有足够可靠的材料可写。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>写作对象</th><th>何时写</th><th>它要解决的问题</th><th>完成标准</th></tr></thead>
+<tbody>
+<tr><td>捕获记录</td><td>实验、阅读和讨论发生时</td><td>事实、上下文和下一步会不会消失</td><td>时间、对象、动作、结果和位置可追溯</td></tr>
+<tr><td>推理草稿</td><td>设计实验、读图和建模时</td><td>假设怎样导向预测，哪里存在跳步</td><td>能检查量纲、极端情形和替代机制</td></tr>
+<tr><td>决策 memo</td><td>路线选择和阶段复盘时</td><td>为什么继续、停止、修改或转向</td><td>依据、替代项、风险与复查日期清楚</td></tr>
+<tr><td>论文组件</td><td>结果尚在形成时</td><td>证据能支持多强的主张</td><td>图、图注、方法和主张可以相互定位</td></tr>
+<tr><td>投稿稿件</td><td>证据链基本闭合后</td><td>特定读者为何应接受和使用这项工作</td><td>定位合适、论证完整、限制明确、材料可复用</td></tr>
+</tbody></table></div>
+
+<p>实验本需要让半年后的你恢复当时的输入、版本、决定和失败原因。计算研究还要保存软件环境、参数、随机种子、中间结果和原始数据，并让关键结果能回到具体步骤。<sup class="c"><a href="03-execution-and-boundaries.html#r-schnell">21</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-sandve">22</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-wilson">23</a></sup> 数据和代码若要被他人发现和复用，还需清楚的标识、元数据、访问方式与许可。<sup class="c"><a href="03-execution-and-boundaries.html#r-fair">24</a></sup></p>
+
+<div class="box def"><span class="lbl">每日实验记录最小模板</span>
+<p class="copyline">时间、项目与 commit：
+今天要区分的假设：
+输入数据、样本与环境：
+相对上一版改变了什么：
+代码、参数与随机种子：
+结果与不确定性：
+解释、替代解释与可信度：
+失败类别与诊断证据：
+因此做出的决定：
+下一最小动作：</p></div>
+
+<p>对 AI 生成的模型、代码和文字，至少做三次人类操作：从白纸重建逻辑，核验来源与关键数字，再向同伴解释每一步为何成立。熟悉感只能说明你见过这段话，不能说明你拥有其中的论证。</p>
+
+<h2 id="s19"><span class="n">19</span>方法论文写作：八项证据门槛</h2>
+<p class="lede">高水平方法论文的门槛从选题和实验设计开始，靠投稿前润色补不出来。</p>
+
+<p><i>Nature Methods</i> 编辑部在 2022 年说明了他们筛选方法论文时常看的项目。这是一份针对基础生命科学方法论文的期刊标准，不是所有学科的通用录用公式。它的价值在于把“好论文”拆成作者可以提前准备的证据。<sup class="c"><a href="03-execution-and-boundaries.html#r-nm-editorial">18</a></sup></p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>门槛</th><th>编辑实际要判断什么</th><th>研究阶段就该准备什么</th></tr></thead>
+<tbody>
+<tr><td>1 范围</td><td>问题是否属于期刊服务的学科和文章类型</td><td>一句话写明使用者、任务和应用范围；边界不清时先做 presubmission inquiry</td></tr>
+<tr><td>2 时机与兴趣</td><td>问题是否处在当前方法发展的活跃位置</td><td>持续更新领域雷达，说明为什么是现在</td></tr>
+<tr><td>3 新颖性与价值</td><td>相对最新工作，方法是概念上不同，还是立即更有用</td><td>精确比较差异、性能与新应用，不把“首次”当作唯一贡献</td></tr>
+<tr><td>4 可使用性</td><td>别人能否据此运行、复现或获得材料</td><td>算法细节、逐步协议、代码仓库、版本、许可证、用户指南和材料分发计划</td></tr>
+<tr><td>5 验证</td><td>方法在已知真值或充分表征的系统上是否做对</td><td>实验方法使用已充分表征的系统；计算方法尽量使用 ground truth 或 gold standard</td></tr>
+<tr><td>6 公平基准</td><td>相似方法是否在合理数据、指标和配置下比较</td><td>最新基线、统一指标、参数记录，以及排除某个基线的可说明理由</td></tr>
+<tr><td>7 一般适用性</td><td>性能是否只来自一个容易的数据集或系统</td><td>跨系统、数据集或数据类型验证；样例数量按领域决定</td></tr>
+<tr><td>8 困难示范与边界</td><td>是否有一个能说明实际价值的高难度应用，结论是否守住数据边界</td><td>优先设计有辨识力的真实任务，同时主动写限制和失败条件</td></tr>
+</tbody></table></div>
+
+<p>几个细节不能被写成口号。对于计算工具，模拟数据可以帮助验证，并可加入噪声使其更接近真实条件；该刊通常仍希望看到真实实验数据。该刊把两个不同应用视为证明一般适用性的常见最低起点，但明确说数量取决于领域。高难度的“killer application”有帮助，却不是每篇论文的硬性要求；方法论文也不必同时产生新的生物学发现。<sup class="c"><a href="03-execution-and-boundaries.html#r-nm-editorial">18</a></sup></p>
+
+<div class="box key"><span class="lbl">方法论文贡献句</span>
+<p class="copyline">现有方法在 [任务 / 条件] 下受到 [具体限制]。
+我们改变了 [方法对象或机制]，预期改善 [可测指标或新能力]。
+证据来自 [真值验证]、[公平基准]、[跨系统测试] 和 [困难示范]。
+目前仍不能支持 [更强外推]，失效条件是 [边界]。</p></div>
+
+<h2 id="s20"><span class="n">20</span>投稿写作：把常见审稿意见变成投稿前检查</h2>
+<p class="lede">等审稿人指出缺口，通常意味着你在研究设计阶段已经错过了最便宜的修补时机。</p>
+
+<p><i>Nature Computational Science</i> 编辑部把跨领域反复出现的审稿意见归为四类：比较与验证、工作语境、实际用途、整体清晰度。这是编辑经验的归纳，文章没有报告样本量或各类意见的频次，不能把它当成定量排名。它仍然适合作为投稿前的红队目录。<sup class="c"><a href="03-execution-and-boundaries.html#r-ncs-reviewers">19</a></sup></p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>审稿入口</th><th>常见缺口</th><th>投稿前怎么查</th></tr></thead>
+<tbody>
+<tr><td>比较与验证</td><td>漏掉近期强基线；指标不适合任务；工具配置不明；数据规模或类型太单一</td><td>冻结基线清单和检索日期，记录每个工具的参数与版本，说明指标为何回答目标问题，并在足够大且多样的数据上检查稳健性</td></tr>
+<tr><td>工作语境</td><td>没有解释为什么需要新方法；与现有工具的差异含糊；缺关键引文；选择性报告；主张强于数据</td><td>让引言提出真实缺口，让比较覆盖最接近的工作；把全部主要结果、统计检验和限定词放入主张表</td></tr>
+<tr><td>实际用途</td><td>限制没有写；缺少扩展性或真实问题验证；生物数据存在泄漏风险</td><td>列失效条件，测试运行成本与规模，加入真实任务；按实体或来源检查训练测试集的潜在重复与泄漏</td></tr>
+<tr><td>整体清晰度</td><td>方法、环境、假设或参数缺失；图无法独立阅读；讨论顺序混乱；错字与过度表述</td><td>让合作者只凭方法复现，让非项目成员只凭图注解释结果；最后再做结构、术语、语法和格式检查</td></tr>
+</tbody></table></div>
+
+<h3>从主张表到投稿稿件</h3>
+<p>Mensh 与 Kording 建议用 context-content-conclusion 组织论文、段落和句子，并按支撑核心结论的逻辑安排结果，而不是照实验发生顺序写流水账。<sup class="c"><a href="03-execution-and-boundaries.html#r-mensh">20</a></sup> 把这个结构与两篇编辑部文章合并，可以得到一条更严格的生产流程：</p>
+
+<div class="protocol">
+  <div class="phead">Paper production protocol</div>
+  <div class="rows">
+    <div class="when">1 论文合同</div><div class="what">写明论文类型、目标读者、目标期刊范围、一句可反驳主张、贡献类型、最强反对意见和成立所需证据。</div>
+    <div class="when">2 主张表</div><div class="what">每行一个 claim，旁列承担它的图、数据、全文来源、统计对象、限定词和未完成验证。没有证据的句子先留在表里，不进入摘要。</div>
+    <div class="when">3 图表链</div><div class="what">按问题、设计、结果、边界排列关键图。每张图写三句：为什么做，数据直接显示什么，它支持到哪一级结论。</div>
+    <div class="when">4 复现包</div><div class="what">补齐协议、算法、环境、参数、随机种子、数据划分、基线配置、代码和许可。让未参与项目的人实际走一遍。</div>
+    <div class="when">5 四类红队</div><div class="what">分别检查比较与验证、研究语境、实际用途和整体清晰度。优先补实验和证据，再改叙事。</div>
+    <div class="when">6 语言与答辩</div><div class="what">最后处理段落节奏、术语一致、图文对应、引用和语法。AI 可以帮助发现含糊句和模拟审稿，但每项修改都由作者回到证据作决定。</div>
+  </div>
+</div>
+
+<div class="box note"><span class="lbl">投稿前十项核对</span>
+<p>核对论文类型与期刊范围、相对最新工作的差异、真值验证、基线与指标、跨数据适用性、数据泄漏、方法复用条件、失败边界、图注自足性，以及摘要与正文的结论强度。任何一项无法确认，都应回到实验、分析或主张表处理。</p></div>
+
+<h3>失败、决定和讨论也属于写作</h3>
+<p>失败先分原因：环境或实现、数据与测量、方法与假设、统计功效与方差、概念机制、资源与操作、暂时未知。再按信息价值分级：R3 改变继续、停止或转向的决定；R2 缩小假设空间；R1 只定位技术或流程问题；R0 因输入、过程或版本不可追溯而无法判断。组会记录则固定保留会前问题、展示证据、达成决定、未决分歧、负责人和期限。会后 24 小时内把决定接到周、月和季度目标。</p>
+<nav class="pager" aria-label="前后翻阅"><a href="index.html">← 第一册</a><span class="pager-state">第二册 · 四项核心训练</span><a href="03-execution-and-boundaries.html">第三册 →</a></nav>
+</main>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  var toggle=document.getElementById('tt');
+  toggle.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    if(!cur){cur=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+    root.setAttribute('data-theme',cur==='dark'?'light':'dark');
+  });
+
+  var links=[].slice.call(document.querySelectorAll('#toc a[href^="#"]'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  function spy(){
+    var y=window.scrollY+150,best=0;
+    sections.forEach(function(s,i){if(s.offsetTop<=y){best=i;}});
+    links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+  }
+  addEventListener('scroll',spy,{passive:true});spy();
+
+})();
+</script>
+</body>
+</html>

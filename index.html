@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博士研究的工作方法与准则｜第一册：基础框架</title>
+<meta name="description" content="一套适用于科研学习阶段、尤其面向 AI 时代研究生的研究工作方法与准则，涵盖学术听说读写、AI 协作、证据核验、论文生产、实验留痕与复盘。">
+<style>
+:root{
+  --coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63;
+  --blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;
+  --ink:#20201e;--gray:#756e66;--leader:#aaa198;--gridc:#e9e1d8;
+  --bg:#fbf8f3;--bg2:#fffdfa;--fg:var(--ink);--muted:#675f57;--rule:#ded6cd;
+  --shadow:0 1px 2px rgba(32,32,30,.05),0 10px 32px rgba(32,32,30,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,"Noto Serif CJK SC","Songti SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;--maxw:50rem;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;
+  --leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;
+  --powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);
+  --coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193;
+}}
+:root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
+:root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
+.box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
+.thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{border:1px solid var(--rule);border-radius:13px;background:var(--bg2);padding:1.05rem 1.15rem}.card h3{margin:.1rem 0 .45rem}.card p:last-child,.card ul:last-child{margin-bottom:0}.mode{border-top:4px solid var(--peri)}.mode.listen{border-color:var(--teal)}.mode.speak{border-color:var(--coral)}.mode.read{border-color:var(--peri)}.mode.write{border-color:var(--plum)}
+ .flow{display:flex;align-items:stretch;gap:.55rem;margin:1.7rem 0;max-width:var(--maxw)}.flow .step{flex:1;border:1px solid var(--rule);background:var(--bg2);border-radius:10px;padding:.75rem;text-align:center;font:700 .82rem/1.45 var(--sans)}.flow .step small{display:block;font-size:.92em;font-weight:450;color:var(--muted);margin-top:.25rem}.flow .arr{align-self:center;color:var(--leader);font-family:var(--sans)}
+.tablewrap{overflow:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:11px;background:var(--bg2);box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;font:.94rem/1.55 var(--sans)}th,td{text-align:left;vertical-align:top;padding:.72rem .82rem;border-bottom:1px solid var(--rule)}th{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--bg)}tr:last-child td{border-bottom:0}td:first-child{font-weight:700;white-space:nowrap}.table-note{font-size:.84rem;line-height:1.55;color:var(--muted);margin:-.7rem 0 1.5rem;padding:0 .15rem}
+.protocol{border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin:1.6rem 0;background:var(--bg2);box-shadow:var(--shadow)}.protocol .phead{padding:.9rem 1rem;background:var(--fg);color:var(--bg);font:750 .92rem/1.4 var(--sans)}.protocol .rows{display:grid;grid-template-columns:9rem 1fr}.protocol .rows>*{padding:.76rem .92rem;border-bottom:1px solid var(--rule)}.protocol .rows>:nth-last-child(-n+2){border-bottom:0}.protocol .when{font:750 .78rem/1.45 var(--sans);color:var(--rose);background:var(--bg)}.protocol .what{font-size:1rem}.protocol .what p:last-child,.protocol .what ul:last-child{margin-bottom:0}
+figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;padding:1rem;background:var(--bg2);box-shadow:var(--shadow)}figure svg{display:block;width:100%;height:auto}figcaption{font:12px/1.5 var(--sans);color:var(--muted);margin-top:.65rem;max-width:47rem}figcaption b{color:var(--fg)}
+.copyline{font:.92rem/1.62 var(--mono);white-space:pre-wrap;border-left:3px solid var(--leader);padding:.75rem .88rem;background:var(--bg);border-radius:0 8px 8px 0}
+.refs{font-size:.9rem;line-height:1.55}.refs ol{padding-left:1.7rem}.refs li{margin:.55rem 0}.venue{color:var(--muted)}.pdf{display:inline-block;font:800 .64rem/1.4 var(--sans);letter-spacing:.05em;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:.03rem .3rem;text-decoration:none;margin-left:.3rem}.web{color:var(--peri);border-color:var(--peri)}sup.c{font-size:.68em;color:var(--rose);font-weight:800}sup.c a{color:inherit;text-decoration:none}
+#tt{position:fixed;right:1rem;bottom:1rem;z-index:30;width:2.55rem;height:2.55rem;border:1px solid var(--rule);border-radius:50%;background:var(--bg2);color:var(--fg);box-shadow:var(--shadow);cursor:pointer;font-size:1rem}
+.wrap{grid-template-areas:"toc cover" "toc main";row-gap:0}.cover{grid-area:cover;max-width:var(--maxw);padding:2.7rem 0 0}.toc{grid-area:toc}main{grid-area:main;padding-top:0}
+@media(max-width:1000px){.wrap{grid-template-columns:1fr;grid-template-areas:"cover" "toc" "main";gap:0}.toc{position:static;max-height:none;border-bottom:1px solid var(--rule);margin-bottom:1rem;columns:2}.toc .brand,.toc h2{column-span:all}.flow{overflow:auto}.flow .step{min-width:8rem}.ctl{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{padding:0 1rem}h1{font-size:2.25rem}.parthead h2{font-size:1.8rem}.principles,.grid{grid-template-columns:1fr}.protocol .rows{grid-template-columns:1fr}.protocol .rows>*{border-bottom:1px solid var(--rule)}table{min-width:40rem}.toc{columns:auto;padding:1.2rem 0}.toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.45rem}.toc .part,.toc .subpart{grid-column:1/-1}}
+@media print{#tt,.toc{display:none}.wrap{display:block}main>*{max-width:none}}
+</style>
+
+<style>
+.toc .volume-list{list-style:none;padding:0;margin:0 0 1.25rem}.toc .volume-list a{display:block;padding:.45rem .55rem;margin:.25rem 0;border:1px solid var(--rule);border-radius:7px;font-weight:700;color:var(--muted);text-decoration:none}.toc .volume-list a:hover,.toc .volume-list a.current{color:var(--fg);border-color:var(--peri);background:var(--lavender)}.toc .toc-label{margin:1.3rem 0 .65rem}.pager{display:grid;grid-template-columns:1fr auto 1fr;gap:.8rem;align-items:center;border-top:1px solid var(--rule);margin:4.5rem 0 0;padding-top:1.2rem;font:700 .86rem/1.4 var(--sans)}.pager a{color:var(--fg);text-decoration:none}.pager a:last-child{text-align:right}.pager .pager-state{color:var(--muted);font-weight:500}.pager .disabled{visibility:hidden}
+@media(max-width:650px){.pager{grid-template-columns:1fr 1fr}.pager .pager-state{display:none}}
+</style>
+</head>
+<body>
+<button id="tt" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+<div class="wrap">
+<header class="cover">
+  <div class="eyebrow">AI 时代研究者训练手册 v1.4</div>
+  <h1>博士研究的工作方法与准则</h1>
+  <p class="sub">本手册借用语言学习中“听、说、读、写”的分类，归纳博士阶段最核心的四类研究能力：从讲授与交流中理解问题，把想法和证据说清，从文献中重建论证，以及用记录与论文积累可检验的成果。它适用于不同科研学习阶段，尤其面向 AI 已深度进入检索、分析和写作流程的研究生。</p>
+  <p class="byline">作者：Tao Zhu (Westlake Uni.)</p>
+</header><nav class="toc" id="toc" aria-label="手册目录">
+  <div class="brand">AI-Native Research Methods</div>
+  <h2>三册导航</h2>
+  <ol class="volume-list"><li><a class="current" href="index.html">第一册：基础框架</a></li><li><a class="" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ol>
+  <h2 class="toc-label">本册目录</h2>
+  <ol><li class="part">I 研究者如何被培养</li><li><a href="#s1">1 五年积累目标</a></li><li><a href="#s2">2 AI 改变了什么</a></li><li><a href="#s3">3 个人主动发展与培养环境</a></li><li class="part">II 统一模型</li><li><a href="#s4">4 四类研究能力</a></li><li><a href="#s5">5 AI 贯穿层</a></li><li><a href="#s6">6 对研究结论负责</a></li><li><a href="#s7">7 双重产出</a></li></ol>
+</nav><main>
+
+<div class="box key thesis">
+  <span class="lbl">核心论点</span>
+  <p>AI 大幅降低了搜索、解释、初稿和代码脚手架的成本，但没有降低研究者对问题、证据与结论的责任。科研训练的稀缺环节因此向下游移动：<strong>从“获得材料”转向“规定问题、真正理解、做出判断、产出证据、公开表达并经受追问”</strong>。</p>
+</div>
+
+<div class="box note">
+  <span class="lbl">阅读标记</span>
+  <p><span class="tag e">证据</span> 表示有研究或系统综述支撑；<span class="tag d">设计</span> 表示本文把证据转换成的实践协议；<span class="tag h">假设</span> 表示需要你在未来五年用自己的数据检验。文中的每项来源都链接到本项目保存的全文或网页快照。</p>
+</div>
+
+
+<div class="parthead"><div class="k">Part I</div><h2>研究者如何被培养</h2><p>从长期能力、AI 的作用边界，到个人主动发展与培养环境。</p></div>
+
+<h2 id="s1"><span class="n">1</span>未来五年要积累什么</h2>
+<p class="lede">工具会更新。五年训练要留下跨问题、跨项目和跨工具迁移的研究能力。</p>
+
+<p><span class="tag d">设计</span> 本体系把“科研素养”定义为一组可迁移行为：研究者在真实而不确定的任务中，能稳定完成问题设定、证据生产、解释、交流与自我修正，并愿意为结果负责。知识量、论文数和模型使用熟练度都只能提供部分信息。自我调节学习研究把计划、执行、监控与反思理解为包含认知、元认知、行为、动机和情绪的循环，为这类培养过程提供了理论背景。<sup class="c"><a href="03-execution-and-boundaries.html#r-panadero">9</a></sup></p>
+
+<div class="box def"><span class="lbl">系统公式</span>
+<p><span class="m">科研素养 = 自我塑造 × 培养环境 × 真实实践 × 资产复利</span></p>
+<p class="small">这里的乘号表示短板效应。只记录而不实践会变成档案馆，只实践而不复盘会重复交学费，只依赖导师会停止在他人的问题里，只依赖自己又会错过高质量反馈。</p></div>
+
+<p>知识库是一项外部资产，它的价值要在下一次判断中体现。实验记录、论文阅读记录、会议纪要和推导纸应当让过去的思考可以被检索、质疑、复用和改进。</p>
+
+<h2 id="s2"><span class="n">2</span>AI 改变了什么，什么没有改变</h2>
+<p class="lede">供给变成洪水，但可信度、相关性和所有权没有自动增加。</p>
+
+<p><span class="tag e">证据</span> 在一项针对 444 名受过高等教育的专业人士、聚焦中等难度职业写作的随机实验中，ChatGPT 组完成任务的时间下降约 37%，评分提高 0.45 个标准差。这个结果说明初稿类任务能显著提速，却不能直接外推为科研判断力提升。<sup class="c"><a href="03-execution-and-boundaries.html#r-noy">1</a></sup></p>
+
+<p>AI 的帮助还具有不平滑的边界。对咨询工作者的现场实验发现，在 18 项位于模型能力边界内的任务上，使用 AI 的参与者更快、完成更多、质量更高；但在一个被设计为边界外的复杂任务上，AI 组得到正确答案的概率低 19 个百分点。论文将此称为“锯齿状技术前沿”。<sup class="c"><a href="03-execution-and-boundaries.html#r-dell">2</a></sup> 所以“把 AI 用在最重要的工作上”必须补一句：越重要，越要先判断任务位于什么边界，并提高核验等级。</p>
+
+<p>认知外包本身不是坏事。把信息写在纸上、用代码计算、设置提醒都属于外包，它们可以降低负荷并扩大能力。风险在于，人决定是否外包时依赖的元认知判断也可能失准。<sup class="c"><a href="03-execution-and-boundaries.html#r-risko">3</a></sup></p>
+
+<div class="principles wide">
+  <div class="principle"><b>AI 是工具性部属</b><span>可以委派劳动，不能委派署名、判断和责任。</span></div>
+  <div class="principle"><b>AI 是认知外骨骼</b><span>优先接入真正重要的问题，但按风险决定核验强度。</span></div>
+  <div class="principle"><b>人的带宽是瓶颈</b><span>高质量规定输入，真实理解输出。生成速度不是学习速度。</span></div>
+  <div class="principle"><b>专业水平必须高于默认答案</b><span>通用回答是起点。你的贡献来自取舍、证据、机制和新检验。</span></div>
+</div>
+
+<div class="box caution"><span class="lbl">两处必要修正</span>
+<p>“输入不再是瓶颈”太绝对。更准确的说法是：检索、摘要和初稿的边际成本大幅下降，主要瓶颈向下游移动；付费墙、相关性、隐性知识和注意力仍会限制输入。“教学是唯一检验”也太强。教学与现场问答是高带宽审计，独立推导、预测、迁移和从干净环境复现同样是强检验。</p></div>
+
+<h2 id="s3"><span class="n">3</span>个人主动发展与培养环境</h2>
+<p class="lede">导师与实验室很重要，但研究经历并不会自动把人训练成研究者。</p>
+
+<p><span class="tag e">证据</span> 一项追踪 8 名科学与工程博士生的研究发现，实验室中可以观察到许多认知活动，却未必形成完整的“学徒制”。作者的结论很直接：这种培养不会凭空发生，需要导师和学生双方有意行动。<sup class="c"><a href="03-execution-and-boundaries.html#r-maher">4</a></sup> 美国国家科学院的综合报告也把 mentorship 描述为可通过指导、练习、反馈和反思提高的专业能力，并强调共同目标、信任、清晰预期和多元导师网络。<sup class="c"><a href="03-execution-and-boundaries.html#r-nasem">5</a></sup></p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>外部培养提供</th><th>个人主动提取</th><th>形成的能力证据</th></tr></thead>
+<tbody>
+<tr><td>导师示范判断过程</td><td>追问“为什么排除另一条路”，记录决策规则</td><td>下一次能独立做同类取舍</td></tr>
+<tr><td>实验室反馈</td><td>把意见拆成修改项、责任人、期限和验证方式</td><td>反馈闭环，不重复犯同类错误</td></tr>
+<tr><td>组会与同伴</td><td>主动汇报半成品、提出具体问题、观察他人论证</td><td>想法更早接受压力测试</td></tr>
+<tr><td>课程与 Seminar</td><td>预习、生成式笔记、课后复述并联系自己的项目</td><td>输入转成问题、方法或实验动作</td></tr>
+</tbody></table></div>
+<p class="table-note">培养需要个体从环境中持续提取判断规则，并通过练习和反馈内化。</p>
+
+<div class="parthead"><div class="k">Part II</div><h2>统一模型</h2><p>“听、说、读、写”归纳四类核心研究能力；AI 可贯穿其中，但研究者必须对来源、复现、理解和答辩负责。</p></div>
+
+<h2 id="s4"><span class="n">4</span>借用“听说读写”归纳四类研究能力</h2>
+<p class="lede">“听说读写”原本是语言学习中的常见分类；在研究训练中，它对应四种关键转换，而不是四门彼此独立的技能。</p>
+
+<div class="grid wide">
+  <div class="card mode listen"><h3>听：从现场到问题模型</h3><p>把一次讲授还原成问题、主张、方法、证据、边界和未决点。产物不是笔记页数，而是一张可复述的结构和一个值得问的问题。</p></div>
+  <div class="card mode speak"><h3>说：从内部模型到共同理解</h3><p>根据受众压缩复杂性，把证据组织成故事，并让别人能够定位你的假设、结论和不确定性。</p></div>
+  <div class="card mode read"><h3>读：从论文到证据机器</h3><p>重建作者怎样从问题走到数据，再从数据走到结论。阅读的终点是能审计、复用或反驳。</p></div>
+  <div class="card mode write"><h3>写：从过程到可积累对象</h3><p>把尝试、推导、失败、决策和论证外化，使未来的自己、合作者与审稿人能够追溯和复现。</p></div>
+</div>
+
+<p><span class="tag e">证据</span> ICAP 框架区分被动、主动、建构和互动四种参与方式，并预测从接收转向生成新推论、再转向有实质贡献的对话，通常会带来更深的学习。<sup class="c"><a href="03-execution-and-boundaries.html#r-chi">6</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-icap">7</a></sup> 225 项本科 STEM 研究的元分析也显示主动学习整体优于单纯讲授，但这一效应不应无条件外推为博士科研的具体效应量。<sup class="c"><a href="03-execution-and-boundaries.html#r-freeman">8</a></sup></p>
+
+<h2 id="s5"><span class="n">5</span>AI 是贯穿层：增益器、外骨骼、风险放大器</h2>
+<p class="lede">同一个模型可以帮你多想一步，也可以替你跳过本该发生的思考。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>环节</th><th>AI 的合适角色</th><th>人的不可外包动作</th></tr></thead>
+<tbody>
+<tr><td>听</td><td>课前术语图、录音转写、课后对照遗漏、英语陪练</td><td>现场抓结构，先凭记忆复述，亲自提出问题</td></tr>
+<tr><td>说</td><td>模拟不同受众、生成反对问题、语言润色、计时反馈</td><td>决定故事，核对证据，解释每张图，承担问答</td></tr>
+<tr><td>读</td><td>解释术语和公式、生成阅读问题、比较论文、代码脚手架</td><td>取得全文，检查图表与方法，确认引文，独立重建论证</td></tr>
+<tr><td>写</td><td>整理结构、发现歧义、编辑表达、生成可检查的初稿</td><td>决定主张，运行代码，核对数字，保留来源，批准最终文本</td></tr>
+</tbody></table></div>
+<p class="table-note">AI literacy 同时要求理解能力边界、批判性评估和负责地互动。<sup class="c"><a href="03-execution-and-boundaries.html#r-long">10</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-kasneci">11</a></sup></p>
+
+<h3>按风险分级，而不是一律信任或一律禁止</h3>
+<ul>
+  <li><strong>绿色：</strong>发散想法、措辞、格式、测试数据、代码框架。可以快速使用，仍需抽查。</li>
+  <li><strong>黄色：</strong>文献综合、方法建议、数据清洗、统计解释。必须回到一手全文或数据，并由人重跑。</li>
+  <li><strong>红色：</strong>核心结论、关键数字、伦理安全、临床或政策判断、投稿正文。要求完整证据链、独立复现、人工签字式确认，必要时请导师或领域专家复核。</li>
+</ul>
+
+<h2 id="s6"><span class="n">6</span>对研究结论负责：来源、复现、理解与答辩</h2>
+<p class="lede">AI 可以参与工作，但关键结论必须经过四项检查。</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>检查项</th><th>研究者需要能够做到什么</th><th>可留下的证据</th></tr></thead>
+<tbody>
+<tr><td>来源可追溯</td><td>每个主张能回到作者原文、原始数据或明确观察，而不是只回到 AI 摘要。</td><td>全文位置、规范引用、原始数据或观察记录。</td></tr>
+<tr><td>关键结果可复现</td><td>关键数字与图表能从自己运行过的代码重新生成，环境、参数和输入均有记录。</td><td>脚本、环境说明、版本、输入与结果位置。</td></tr>
+<tr><td>论证已被理解</td><td>离开 AI 与材料后，能重画模型、解释假设、推导关键关系，并预测变化方向。</td><td>纸笔推导、简短说明或脱稿讲解。</td></tr>
+<tr><td>结论能经受提问</td><td>能先直接回答，再说明证据与边界；不知道时能说清未知之处和查明路径。</td><td>汇报记录、问答记录或后续核查计划。</td></tr>
+</tbody></table></div>
+
+<p>AI 输出必须经过人的理解、使用和沟通；所有主张与数字由研究者负责。这里把这项原则改写成可检查的工作要求。<sup class="c"><a href="03-execution-and-boundaries.html#r-pebble">25</a></sup></p>
+
+<h2 id="s7"><span class="n">7</span>双重产出：项目推进与研究者升级</h2>
+<p class="lede">每次科研活动都要问两个问题：事情推进了吗？我获得了下次可迁移的能力吗？</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>活动</th><th>项目产出</th><th>研究者产出</th></tr></thead>
+<tbody>
+<tr><td>读论文</td><td>找到方法、参数、比较基线或反例</td><td>形成领域地图、方法判断与证据记录</td></tr>
+<tr><td>做实验</td><td>数据、图表、否证或新结果</td><td>积累调试模式、失败分类和设计直觉</td></tr>
+<tr><td>组会</td><td>获得决策、资源与下一步</td><td>训练叙事、答辩、反馈转换和领域语言</td></tr>
+<tr><td>写作</td><td>论文、报告、网站或申请</td><td>逼迫论证显性化，暴露理解空洞</td></tr>
+<tr><td>使用 AI</td><td>更快得到候选、草稿、代码和检索线索</td><td>提高规定、验证、整合和治理能力</td></tr>
+</tbody></table></div>
+<p class="table-note">两类产出要同时存在：项目产出检验工作是否推进，研究者产出检验能力能否迁移。</p>
+<nav class="pager" aria-label="前后翻阅"><span class="disabled">←</span><span class="pager-state">第一册 · 基础框架</span><a href="02-four-core-trainings.html">第二册 →</a></nav>
+</main>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  var toggle=document.getElementById('tt');
+  toggle.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    if(!cur){cur=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+    root.setAttribute('data-theme',cur==='dark'?'light':'dark');
+  });
+
+  var links=[].slice.call(document.querySelectorAll('#toc a[href^="#"]'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  function spy(){
+    var y=window.scrollY+150,best=0;
+    sections.forEach(function(s,i){if(s.offsetTop<=y){best=i;}});
+    links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+  }
+  addEventListener('scroll',spy,{passive:true});spy();
+
+})();
+</script>
+</body>
+</html>
