@@ -76,6 +76,10 @@ python3 tools/build_volumes.py
 
 详见 [CHANGELOG.md](CHANGELOG.md)：本次修正正式发表版 Noy & Zhang（2023）的数字，改为分册连续引文与页末参考文献，并重写第一册的逻辑过渡、证据强度标记和最小实践示例。
 
+## v1.6 更新
+
+第二册已统一使用证据／设计标记，阅读合同、阅读深度、逐图审计和 AI 风险分级之间均给出明确映射；投稿前检查明确保留期刊与领域边界。详见 [CHANGELOG.md](CHANGELOG.md)。
+
 以后可以直接这样调用：
 
 > 请使用 research-essay skill，把“[研究主题或初步想法]”发展成一份有全文证据、可复现分析和单页 HTML 的研究 essay。请保留 idea、design、outline、literature、analysis 与纠错记录。
