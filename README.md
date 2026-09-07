@@ -80,6 +80,10 @@ python3 tools/build_volumes.py
 
 第二册已统一使用证据／设计标记，阅读合同、阅读深度、逐图审计和 AI 风险分级之间均给出明确映射；投稿前检查明确保留期刊与领域边界。详见 [CHANGELOG.md](CHANGELOG.md)。
 
+## v1.6.1 更新
+
+第三册恢复完整参考文献索引；第一、二册的脚注仍可在各自页末即时核查。
+
 以后可以直接这样调用：
 
 > 请使用 research-essay skill，把“[研究主题或初步想法]”发展成一份有全文证据、可复现分析和单页 HTML 的研究 essay。请保留 idea、design、outline、literature、analysis 与纠错记录。

@@ -203,7 +203,7 @@ def reference_bank():
     }
 
 
-def localize_references(content, bank):
+def localize_references(content, bank, full_index=False):
     """Give each volume continuous citations and its own reference appendix."""
     keys = []
     for key in re.findall(r'href="#(r-[^"]+)"', content):
@@ -212,6 +212,8 @@ def localize_references(content, bank):
     missing = [key for key in keys if key not in bank]
     if missing:
         raise RuntimeError(f"unknown reference keys: {missing}")
+    if full_index:
+        keys = list(bank)
     numbers = {key: i + 1 for i, key in enumerate(keys)}
     content = re.sub(
         r'(<a href="#(r-[^"]+)">)\d+(</a>)',
@@ -219,7 +221,8 @@ def localize_references(content, bank):
         content,
     )
     entries = ''.join(f'<li id="{key}">{bank[key]}</li>' for key in keys)
-    appendix = (f'<section class="refs volume-refs"><h2 id="refs">本册参考文献</h2>'
+    heading = "完整参考文献索引" if full_index else "本册参考文献"
+    appendix = (f'<section class="refs volume-refs"><h2 id="refs">{heading}</h2>'
                 f'<ol>{entries}</ol></section>')
     return content + appendix
 
@@ -241,7 +244,10 @@ def validate(pages):
             raise RuntimeError(f"{name}: unexpected cross-volume links {sorted(files - expected)}")
         cited = set(re.findall(r'href="#(r-[^"]+)"', html))
         reference_ids = set(re.findall(r'<li id="(r-[^"]+)"', html))
-        if cited != reference_ids:
+        if name == REFERENCE_VOLUME:
+            if not cited <= reference_ids:
+                raise RuntimeError(f"{name}: citations missing from full reference index")
+        elif cited != reference_ids:
             raise RuntimeError(
                 f"{name}: citation/reference mismatch: "
                 f"uncited={sorted(reference_ids - cited)}, missing={sorted(cited - reference_ids)}"
@@ -265,7 +271,8 @@ def main():
             pieces.append(piece)
         content = "".join(pieces)
         content, count = inline_figures(content)
-        content = localize_references(content, bank)
+        content = localize_references(content, bank,
+                                      full_index=volume["file"] == REFERENCE_VOLUME)
         content = public_links(content)
         title = f'博士研究的工作方法与准则｜{volume["number"]}：{volume["title"]}'
         page_prefix = re.sub(r'<title>.*?</title>', f'<title>{title}</title>', prefix, count=1)
