@@ -1,6 +1,6 @@
 # 博士研究的工作方法与准则
 
-主成品分为三册：`index.html`、`02-four-core-trainings.html`、`03-execution-and-boundaries.html`。
+主成品分为三册：`index.html`、`02-four-core-trainings.html`、`03-execution-and-boundaries.html`。网页、源稿、构建工具与更新记录均纳入 Git 版本控制；用于内部核验的 PDF 不公开上传。
 
 三册可由左侧目录切换，也可在文末前后翻阅。全套包含 25 节正文、1 张保留图、13 张表和 25 项已引用来源；表格说明移到表格外，正文、表格与图使用同一内容宽度。
 
@@ -71,6 +71,10 @@ python3 tools/build_volumes.py
 - 移除“英语专业课”“最低可行周循环”和“下周行动协议”，全书改为 25 节。
 - 用“来源、复现、理解与答辩”的责任表格替代所有权矩阵图；只保留五年发展路线图。
 - 将 Seminar 与 Journal Club 标准化，并明确 Journal Club 是文献汇报与组员分享讨论；移除所有字母缩写框架和“文献卡”表述。
+
+## v1.5 更新
+
+详见 [CHANGELOG.md](CHANGELOG.md)：本次修正正式发表版 Noy & Zhang（2023）的数字，改为分册连续引文与页末参考文献，并重写第一册的逻辑过渡、证据强度标记和最小实践示例。
 
 以后可以直接这样调用：
 

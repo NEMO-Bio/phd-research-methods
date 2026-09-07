@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#7d8995"/></marker></defs>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#182230}.h{font-size:25px;font-weight:700}.t{font-size:24px;font-weight:750}.s{font-size:15px;fill:#536273}.a{stroke:#7d8995;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+<rect width="1200" height="590" rx="24" fill="#fbfaf7"/>
+<text class="h" x="48" y="50">听说读写不是四个筒仓</text>
+<text class="s" x="48" y="78">任何一次高质量输入都应经过理解、输出、反馈与再归档，回到中心研究问题。</text>
+<circle cx="600" cy="295" r="95" fill="#20201e"/>
+<text x="600" y="289" text-anchor="middle" style="font:750 22px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;fill:#fff">真实研究问题</text>
+<text x="600" y="320" text-anchor="middle" style="font:14px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;fill:#ddd">实验 · 推导 · 分析</text>
+<path class="a" d="M680 205 C775 150 890 175 924 226"/><path class="a" d="M930 365 C885 425 775 448 684 415"/><path class="a" d="M516 415 C420 450 310 420 273 364"/><path class="a" d="M272 226 C312 171 430 150 520 205"/>
+<rect x="468" y="69" width="264" height="102" rx="18" fill="#dcebf0" stroke="#168c82" stroke-width="2"/>
+<text class="t" x="600" y="113" text-anchor="middle">听</text>
+<text class="s" x="600" y="145" text-anchor="middle">现场 → 问题模型</text>
+<rect x="798" y="244" width="264" height="102" rx="18" fill="#f9dcd6" stroke="#e9775f" stroke-width="2"/>
+<text class="t" x="930" y="288" text-anchor="middle">说</text>
+<text class="s" x="930" y="320" text-anchor="middle">内部模型 → 共同理解</text>
+<rect x="468" y="419" width="264" height="102" rx="18" fill="#eee4f0" stroke="#744889" stroke-width="2"/>
+<text class="t" x="600" y="463" text-anchor="middle">写</text>
+<text class="s" x="600" y="495" text-anchor="middle">过程 → 可积累对象</text>
+<rect x="138" y="244" width="264" height="102" rx="18" fill="#e8e7f5" stroke="#536cc5" stroke-width="2"/>
+<text class="t" x="270" y="288" text-anchor="middle">读</text>
+<text class="s" x="270" y="320" text-anchor="middle">论文 → 证据机器</text>
+</svg>

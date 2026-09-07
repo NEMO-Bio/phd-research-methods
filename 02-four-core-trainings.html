@@ -25,7 +25,7 @@
 :root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
 :root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
-.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol,.toc ul{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
 main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
 .box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
 .thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
@@ -59,9 +59,9 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 </header><nav class="toc" id="toc" aria-label="手册目录">
   <div class="brand">AI-Native Research Methods</div>
   <h2>三册导航</h2>
-  <ol class="volume-list"><li><a class="" href="index.html">第一册：基础框架</a></li><li><a class="current" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ol>
+  <ul class="volume-list"><li><a class="" href="index.html">第一册：基础框架</a></li><li><a class="current" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ul>
   <h2 class="toc-label">本册目录</h2>
-  <ol><li class="part">III 四项核心训练</li><li class="subpart">听：在现场重建问题</li><li><a href="#s8">8 论证结构</a></li><li><a href="#s9">9 Seminar 与 Journal Club</a></li><li class="subpart">说：让研究成为共同对象</li><li><a href="#s10">10 科研表达</a></li><li><a href="#s11">11 未成形想法</a></li><li><a href="#s12">12 研究汇报</a></li><li><a href="#s13">13 English speaker</a></li><li class="subpart">读：从领域到证据</li><li><a href="#s14">14 领域雷达</a></li><li><a href="#s15">15 阅读合同</a></li><li><a href="#s16">16 逐图审证据</a></li><li><a href="#s17">17 读后转化与 AI</a></li><li class="subpart">写：从过程到论文</li><li><a href="#s18">18 研究过程写作</a></li><li><a href="#s19">19 方法论文证据门槛</a></li><li><a href="#s20">20 投稿前检查</a></li></ol>
+  <ul class="section-list"><li class="part">III 四项核心训练</li><li class="subpart">听：在现场重建问题</li><li><a href="#s8">8 论证结构</a></li><li><a href="#s9">9 Seminar 与 Journal Club</a></li><li class="subpart">说：让研究成为共同对象</li><li><a href="#s10">10 科研表达</a></li><li><a href="#s11">11 未成形想法</a></li><li><a href="#s12">12 研究汇报</a></li><li><a href="#s13">13 English speaker</a></li><li class="subpart">读：从领域到证据</li><li><a href="#s14">14 领域雷达</a></li><li><a href="#s15">15 阅读合同</a></li><li><a href="#s16">16 逐图审证据</a></li><li><a href="#s17">17 读后转化与 AI</a></li><li class="subpart">写：从过程到论文</li><li><a href="#s18">18 研究过程写作</a></li><li><a href="#s19">19 方法论文证据门槛</a></li><li><a href="#s20">20 投稿前检查</a></li></ul>
 </nav><main>
 
 <div class="parthead"><div class="k">Part III · 听</div><h2>听：在现场重建研究问题</h2><p>博士阶段的“听”不只是接收信息，而是在课程、Seminar 与讨论中抓住问题、论证、证据和边界。</p></div>
@@ -82,7 +82,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>关联</td><td>它能改变我的哪个问题、方法或下一步？</td></tr>
 </tbody></table></div>
 
-<p>第二语言学术笔记同时消耗听辨、选择、编码和书写资源。综述建议简洁和生成式记录优先于逐字抄写，也指出显式训练、缩写与改述有帮助。中英混合速记可以作为提高现场效率的策略，成稿时再转成目标语言。<sup class="c"><a href="03-execution-and-boundaries.html#r-siegel">12</a></sup></p>
+<p>第二语言学术笔记同时消耗听辨、选择、编码和书写资源。综述建议简洁和生成式记录优先于逐字抄写，也指出显式训练、缩写与改述有帮助。中英混合速记可以作为提高现场效率的策略，成稿时再转成目标语言。<sup class="c"><a href="#r-siegel">1</a></sup></p>
 
 <div class="box note"><span class="lbl">双通道笔记</span>
 <p>左侧写问题、主张、方法、证据和边界；右侧只写理解状态和下一步，例如没听懂、关键转折、替代解释、与自己课题的关联、可提出的问题。不要边听边把所有未知都交给 AI，那会让你失去对自己理解状态的判断。</p></div>
@@ -108,7 +108,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <h2 id="s10"><span class="n">10</span>科研表达的基本方法：建立可复述的论证</h2>
 <p class="lede">成熟的 speaker 能让不同背景的人听清问题、证据和结论边界。</p>
 
-<p>经典的科研演讲建议反复强调受众、核心信息、逻辑故事、简化内容、练习和时间控制。<sup class="c"><a href="03-execution-and-boundaries.html#r-bourne">13</a></sup> David Stern 则把优秀 talk 看成与全场的对话，并提醒报告不是论文搬运。报告应从一般问题进入关键实验，再回到一般意义。<sup class="c"><a href="03-execution-and-boundaries.html#r-stern-structure">14</a></sup></p>
+<p>经典的科研演讲建议反复强调受众、核心信息、逻辑故事、简化内容、练习和时间控制。<sup class="c"><a href="#r-bourne">2</a></sup> David Stern 则把优秀 talk 看成与全场的对话，并提醒报告不是论文搬运。报告应从一般问题进入关键实验，再回到一般意义。<sup class="c"><a href="#r-stern-structure">3</a></sup></p>
 
 <div class="box key"><span class="lbl">先写最后一句</span>
 <p>在做幻灯片前，写下听众第二天只能记住的一句话。每一页都必须回答：这页是否帮助那句话变得可信？若不能，就删除、放附录或改成会后材料。</p></div>
@@ -153,7 +153,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 </ul>
 
 <h3>Q&A 的五步</h3>
-<p><span class="m">复述问题 → 先给短答案 → 给证据或推理 → 说明边界 → 必要时承诺具体追查</span>。Stern 建议复述或重述问题，让全场参与；不知道时坦率说明，并把没有数据支持的外推明确标为推测。<sup class="c"><a href="03-execution-and-boundaries.html#r-stern-qa">15</a></sup></p>
+<p><span class="m">复述问题 → 先给短答案 → 给证据或推理 → 说明边界 → 必要时承诺具体追查</span>。Stern 建议复述或重述问题，让全场参与；不知道时坦率说明，并把没有数据支持的外推明确标为推测。<sup class="c"><a href="#r-stern-qa">4</a></sup></p>
 
 <h2 id="s13"><span class="n">13</span>English academic speaker：训练功能，不追求表演</h2>
 <p class="lede">先训练 intelligibility、structure 和 interaction。母语口音不属于评价目标。</p>
@@ -191,7 +191,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <h2 id="s15"><span class="n">15</span>读前：先写阅读合同</h2>
 <p class="lede">同一篇论文不会因为你读得慢而自动变得有用。先写清这次阅读要支持什么判断。</p>
 
-<p>Carey、Steiner 和 Petri 把主动阅读的起点放在两个目标上：读者想得到什么，作者想完成什么。作者目标可以先从论文类型判断。方法论文、资源论文、研究论文、综述和评论文章承担的任务不同，不能用同一张评分表阅读。期刊对各部分的写作要求也能帮助读者判断题目、摘要、方法、结果和讨论分别在做什么。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+<p>Carey、Steiner 和 Petri 把主动阅读的起点放在两个目标上：读者想得到什么，作者想完成什么。作者目标可以先从论文类型判断。方法论文、资源论文、研究论文、综述和评论文章承担的任务不同，不能用同一张评分表阅读。期刊对各部分的写作要求也能帮助读者判断题目、摘要、方法、结果和讨论分别在做什么。<sup class="c"><a href="#r-carey">5</a></sup></p>
 
 <div class="tablewrap"><table>
 <thead><tr><th>这次为什么读</th><th>先看哪里</th><th>读到什么程度可以停</th><th>留下什么</th></tr></thead>
@@ -211,12 +211,12 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 这次阅读将影响哪个决定：
 最低产物与停止条件：</p></div>
 
-<p>接着判断每个部分的功能。题目和摘要给出作者选择的主结论，引言说明问题与研究策略，方法描述实际操作，结果呈现经过选择和组织的数据，讨论负责解释、限制与外推。结果部分的语气可能更客观，但图、比较和叙述顺序仍然经过作者选择。阅读时要保留这层距离。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+<p>接着判断每个部分的功能。题目和摘要给出作者选择的主结论，引言说明问题与研究策略，方法描述实际操作，结果呈现经过选择和组织的数据，讨论负责解释、限制与外推。结果部分的语气可能更客观，但图、比较和叙述顺序仍然经过作者选择。阅读时要保留这层距离。<sup class="c"><a href="#r-carey">5</a></sup></p>
 
 <h2 id="s16"><span class="n">16</span>读中：逐图审证据，六问要问到每个 panel</h2>
 <p class="lede">读原始研究时，正文帮助你理解证据，图表才是需要独立检查的对象。</p>
 
-<p>Carey 等人建议对整篇论文、每个实验和每张图重复六个问题。这个做法比写一段摘要更有用，因为它把研究动机、操作、结果和作者解释拆开了。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+<p>Carey 等人建议对整篇论文、每个实验和每张图重复六个问题。这个做法比写一段摘要更有用，因为它把研究动机、操作、结果和作者解释拆开了。<sup class="c"><a href="#r-carey">5</a></sup></p>
 
 <div class="protocol">
   <div class="phead">六问证据审计</div>
@@ -236,7 +236,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <p>任何一步说不清，都回到方法、图注、补充材料或被引用的原始方法论文。不要用“图看起来很明显”代替样本量、效应大小和变异，也不要把统计显著写成机制已经成立。</p>
 
 <h3>把批判性阅读和挑错分开</h3>
-<p>论文经过发表仍可能受测量限制、选择偏差、混杂、统计功效和适用范围影响。批判性阅读因此要检查替代解释，也要检查自己的确认偏误。与此同时，措辞生硬、漏引一篇文章或图号写错，并不自动削弱科学结论。Carey 等人把“批判”与“善意”并列：先判断问题是否影响证据，再决定它在评价中占多大权重。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+<p>论文经过发表仍可能受测量限制、选择偏差、混杂、统计功效和适用范围影响。批判性阅读因此要检查替代解释，也要检查自己的确认偏误。与此同时，措辞生硬、漏引一篇文章或图号写错，并不自动削弱科学结论。Carey 等人把“批判”与“善意”并列：先判断问题是否影响证据，再决定它在评价中占多大权重。<sup class="c"><a href="#r-carey">5</a></sup></p>
 
 <h3>深度按风险升级</h3>
 <div class="tablewrap"><table>
@@ -247,12 +247,12 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>Pass 2</td><td>逐图回答六问，核对方法、样本、比较和统计</td><td>证据记录与图表审计</td></tr>
 <tr><td>Pass 3</td><td>在作者假设下虚拟重做；必要时重推公式、运行代码或重做关键分析</td><td>复现记录、差异解释和可迁移模块</td></tr>
 </tbody></table></div>
-<p class="table-note">Keshav 的三遍法提供深度阶梯，Carey 等人的六问把第二、三遍变成可执行的证据检查。<sup class="c"><a href="03-execution-and-boundaries.html#r-keshav">16</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup></p>
+<p class="table-note">Keshav 的三遍法提供深度阶梯，Carey 等人的六问把第二、三遍变成可执行的证据检查。<sup class="c"><a href="#r-keshav">6</a></sup><sup class="c"><a href="#r-carey">5</a></sup></p>
 
 <h2 id="s17"><span class="n">17</span>读后：讨论、连接、复现与 AI</h2>
 <p class="lede">一篇论文只有改变了一项判断、一个实验或一种解释，才完成从输入到研究的转换。</p>
 
-<p>Carey 等人的最后三条建议要求读者走出正文：补读术语、补充材料和关键引文；向同伴讲论文，让表达暴露理解缺口；把论文接到已有知识和自己的研究上。<sup class="c"><a href="03-execution-and-boundaries.html#r-carey">17</a></sup> 这三步可以压成一个固定的读后动作：</p>
+<p>Carey 等人的最后三条建议要求读者走出正文：补读术语、补充材料和关键引文；向同伴讲论文，让表达暴露理解缺口；把论文接到已有知识和自己的研究上。<sup class="c"><a href="#r-carey">5</a></sup> 这三步可以压成一个固定的读后动作：</p>
 
 <div class="flow wide">
   <div class="step">补齐<small>术语、方法、补充材料</small></div><div class="arr">→</div>
@@ -305,7 +305,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>投稿稿件</td><td>证据链基本闭合后</td><td>特定读者为何应接受和使用这项工作</td><td>定位合适、论证完整、限制明确、材料可复用</td></tr>
 </tbody></table></div>
 
-<p>实验本需要让半年后的你恢复当时的输入、版本、决定和失败原因。计算研究还要保存软件环境、参数、随机种子、中间结果和原始数据，并让关键结果能回到具体步骤。<sup class="c"><a href="03-execution-and-boundaries.html#r-schnell">21</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-sandve">22</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-wilson">23</a></sup> 数据和代码若要被他人发现和复用，还需清楚的标识、元数据、访问方式与许可。<sup class="c"><a href="03-execution-and-boundaries.html#r-fair">24</a></sup></p>
+<p>实验本需要让半年后的你恢复当时的输入、版本、决定和失败原因。计算研究还要保存软件环境、参数、随机种子、中间结果和原始数据，并让关键结果能回到具体步骤。<sup class="c"><a href="#r-schnell">7</a></sup><sup class="c"><a href="#r-sandve">8</a></sup><sup class="c"><a href="#r-wilson">9</a></sup> 数据和代码若要被他人发现和复用，还需清楚的标识、元数据、访问方式与许可。<sup class="c"><a href="#r-fair">10</a></sup></p>
 
 <div class="box def"><span class="lbl">每日实验记录最小模板</span>
 <p class="copyline">时间、项目与 commit：
@@ -324,7 +324,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <h2 id="s19"><span class="n">19</span>方法论文写作：八项证据门槛</h2>
 <p class="lede">高水平方法论文的门槛从选题和实验设计开始，靠投稿前润色补不出来。</p>
 
-<p><i>Nature Methods</i> 编辑部在 2022 年说明了他们筛选方法论文时常看的项目。这是一份针对基础生命科学方法论文的期刊标准，不是所有学科的通用录用公式。它的价值在于把“好论文”拆成作者可以提前准备的证据。<sup class="c"><a href="03-execution-and-boundaries.html#r-nm-editorial">18</a></sup></p>
+<p><i>Nature Methods</i> 编辑部在 2022 年说明了他们筛选方法论文时常看的项目。这是一份针对基础生命科学方法论文的期刊标准，不是所有学科的通用录用公式。它的价值在于把“好论文”拆成作者可以提前准备的证据。<sup class="c"><a href="#r-nm-editorial">11</a></sup></p>
 
 <div class="tablewrap"><table>
 <thead><tr><th>门槛</th><th>编辑实际要判断什么</th><th>研究阶段就该准备什么</th></tr></thead>
@@ -339,7 +339,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>8 困难示范与边界</td><td>是否有一个能说明实际价值的高难度应用，结论是否守住数据边界</td><td>优先设计有辨识力的真实任务，同时主动写限制和失败条件</td></tr>
 </tbody></table></div>
 
-<p>几个细节不能被写成口号。对于计算工具，模拟数据可以帮助验证，并可加入噪声使其更接近真实条件；该刊通常仍希望看到真实实验数据。该刊把两个不同应用视为证明一般适用性的常见最低起点，但明确说数量取决于领域。高难度的“killer application”有帮助，却不是每篇论文的硬性要求；方法论文也不必同时产生新的生物学发现。<sup class="c"><a href="03-execution-and-boundaries.html#r-nm-editorial">18</a></sup></p>
+<p>几个细节不能被写成口号。对于计算工具，模拟数据可以帮助验证，并可加入噪声使其更接近真实条件；该刊通常仍希望看到真实实验数据。该刊把两个不同应用视为证明一般适用性的常见最低起点，但明确说数量取决于领域。高难度的“killer application”有帮助，却不是每篇论文的硬性要求；方法论文也不必同时产生新的生物学发现。<sup class="c"><a href="#r-nm-editorial">11</a></sup></p>
 
 <div class="box key"><span class="lbl">方法论文贡献句</span>
 <p class="copyline">现有方法在 [任务 / 条件] 下受到 [具体限制]。
@@ -350,7 +350,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <h2 id="s20"><span class="n">20</span>投稿写作：把常见审稿意见变成投稿前检查</h2>
 <p class="lede">等审稿人指出缺口，通常意味着你在研究设计阶段已经错过了最便宜的修补时机。</p>
 
-<p><i>Nature Computational Science</i> 编辑部把跨领域反复出现的审稿意见归为四类：比较与验证、工作语境、实际用途、整体清晰度。这是编辑经验的归纳，文章没有报告样本量或各类意见的频次，不能把它当成定量排名。它仍然适合作为投稿前的红队目录。<sup class="c"><a href="03-execution-and-boundaries.html#r-ncs-reviewers">19</a></sup></p>
+<p><i>Nature Computational Science</i> 编辑部把跨领域反复出现的审稿意见归为四类：比较与验证、工作语境、实际用途、整体清晰度。这是编辑经验的归纳，文章没有报告样本量或各类意见的频次，不能把它当成定量排名。它仍然适合作为投稿前的红队目录。<sup class="c"><a href="#r-ncs-reviewers">12</a></sup></p>
 
 <div class="tablewrap"><table>
 <thead><tr><th>审稿入口</th><th>常见缺口</th><th>投稿前怎么查</th></tr></thead>
@@ -362,7 +362,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 </tbody></table></div>
 
 <h3>从主张表到投稿稿件</h3>
-<p>Mensh 与 Kording 建议用 context-content-conclusion 组织论文、段落和句子，并按支撑核心结论的逻辑安排结果，而不是照实验发生顺序写流水账。<sup class="c"><a href="03-execution-and-boundaries.html#r-mensh">20</a></sup> 把这个结构与两篇编辑部文章合并，可以得到一条更严格的生产流程：</p>
+<p>Mensh 与 Kording 建议用 context-content-conclusion 组织论文、段落和句子，并按支撑核心结论的逻辑安排结果，而不是照实验发生顺序写流水账。<sup class="c"><a href="#r-mensh">13</a></sup> 把这个结构与两篇编辑部文章合并，可以得到一条更严格的生产流程：</p>
 
 <div class="protocol">
   <div class="phead">Paper production protocol</div>
@@ -381,7 +381,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 
 <h3>失败、决定和讨论也属于写作</h3>
 <p>失败先分原因：环境或实现、数据与测量、方法与假设、统计功效与方差、概念机制、资源与操作、暂时未知。再按信息价值分级：R3 改变继续、停止或转向的决定；R2 缩小假设空间；R1 只定位技术或流程问题；R0 因输入、过程或版本不可追溯而无法判断。组会记录则固定保留会前问题、展示证据、达成决定、未决分歧、负责人和期限。会后 24 小时内把决定接到周、月和季度目标。</p>
-<nav class="pager" aria-label="前后翻阅"><a href="index.html">← 第一册</a><span class="pager-state">第二册 · 四项核心训练</span><a href="03-execution-and-boundaries.html">第三册 →</a></nav>
+<section class="refs volume-refs"><h2 id="refs">本册参考文献</h2><ol><li id="r-siegel">Siegel J. Research into practice: Teaching notetaking to L2 students. <span class="venue"><i>Language Teaching</i> 55:245-259, 2022. DOI: 10.1017/S0261444820000476.</span><a class="pdf" href="https://doi.org/10.1017/S0261444820000476" target="_blank" rel="noopener">DOI</a></li><li id="r-bourne">Bourne PE. Ten simple rules for making good oral presentations. <span class="venue"><i>PLoS Computational Biology</i> 3:e77, 2007. DOI: 10.1371/journal.pcbi.0030077.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.0030077" target="_blank" rel="noopener">DOI</a></li><li id="r-stern-structure">Stern DL. A talk is not a paper: How to structure an effective talk. <span class="venue"><i>How To Give a Talk</i>, updated 2022.</span><a class="pdf web" href="https://www.howtogiveatalk.com/blog/the-structure-of-an-effective-talk" target="_blank" rel="noopener">SNAPSHOT</a></li><li id="r-stern-qa">Stern DL. Navigating the Q&amp;A. <span class="venue"><i>How To Give a Talk</i>.</span><a class="pdf web" href="https://www.howtogiveatalk.com/blog/navigating-the-qa" target="_blank" rel="noopener">SNAPSHOT</a></li><li id="r-carey">Carey MA, Steiner KL, Petri WA Jr. Ten simple rules for reading a scientific paper. <span class="venue"><i>PLoS Computational Biology</i> 16:e1008032, 2020. DOI: 10.1371/journal.pcbi.1008032.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1008032" target="_blank" rel="noopener">DOI</a></li><li id="r-keshav">Keshav S. How to read a paper. <span class="venue"><i>ACM SIGCOMM Computer Communication Review</i> 37:83-84, 2007. DOI: 10.1145/1273445.1273458.</span><a class="pdf" href="https://doi.org/10.1145/1273445.1273458" target="_blank" rel="noopener">DOI</a></li><li id="r-schnell">Schnell S. Ten simple rules for a computational biologist's laboratory notebook. <span class="venue"><i>PLoS Computational Biology</i> 11:e1004385, 2015. DOI: 10.1371/journal.pcbi.1004385.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1004385" target="_blank" rel="noopener">DOI</a></li><li id="r-sandve">Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten simple rules for reproducible computational research. <span class="venue"><i>PLoS Computational Biology</i> 9:e1003285, 2013. DOI: 10.1371/journal.pcbi.1003285.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1003285" target="_blank" rel="noopener">DOI</a></li><li id="r-wilson">Wilson G, Bryan J, Cranston K, et al. Good enough practices in scientific computing. <span class="venue"><i>PLoS Computational Biology</i> 13:e1005510, 2017. DOI: 10.1371/journal.pcbi.1005510.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1005510" target="_blank" rel="noopener">DOI</a></li><li id="r-fair">Wilkinson MD, Dumontier M, Aalbersberg IJ, et al. The FAIR guiding principles for scientific data management and stewardship. <span class="venue"><i>Scientific Data</i> 3:160018, 2016. DOI: 10.1038/sdata.2016.18.</span><a class="pdf" href="https://doi.org/10.1038/sdata.2016.18" target="_blank" rel="noopener">DOI</a></li><li id="r-nm-editorial">Nature Methods editors. What makes a Nature Methods paper. <span class="venue"><i>Nature Methods</i> 19:771-772, 2022. DOI: 10.1038/s41592-022-01558-4.</span><a class="pdf" href="https://doi.org/10.1038/s41592-022-01558-4" target="_blank" rel="noopener">DOI</a></li><li id="r-ncs-reviewers">Nature Computational Science editors. What reviewers request the most. <span class="venue"><i>Nature Computational Science</i> 6:317, 2026. DOI: 10.1038/s43588-026-00989-9.</span><a class="pdf" href="https://doi.org/10.1038/s43588-026-00989-9" target="_blank" rel="noopener">DOI</a></li><li id="r-mensh">Mensh B, Kording K. Ten simple rules for structuring papers. <span class="venue"><i>PLoS Computational Biology</i> 13:e1005619, 2017. DOI: 10.1371/journal.pcbi.1005619.</span><a class="pdf" href="https://doi.org/10.1371/journal.pcbi.1005619" target="_blank" rel="noopener">DOI</a></li></ol></section><nav class="pager" aria-label="前后翻阅"><a href="index.html">← 第一册</a><span class="pager-state">第二册 · 四项核心训练</span><a href="03-execution-and-boundaries.html">第三册 →</a></nav>
 </main>
 </div>
 <script>

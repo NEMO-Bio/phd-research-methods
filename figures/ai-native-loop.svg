@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#7d8995"/></marker></defs>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#182230}.h{font-size:25px;font-weight:700}.t{font-size:18px;font-weight:700}.s{font-size:14px;fill:#536273}.a{stroke:#7d8995;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+<rect width="1200" height="420" rx="24" fill="#fbfaf7"/>
+<text class="h" x="48" y="50">AI 原生研究循环</text>
+<text class="s" x="48" y="78">速度发生在中间，所有权覆盖全程。循环的输出必须成为下一轮问题的输入。</text>
+<rect x="42" y="145" width="196" height="118" rx="18" fill="#e8f1ff" stroke="#cbd4dc"/>
+<text class="t" x="140" y="187" text-anchor="middle">问题</text>
+<text class="s" x="140" y="220" text-anchor="middle">人定义目标与证据标准</text>
+<path class="a" d="M240 204 H267"/>
+<rect x="274" y="145" width="196" height="118" rx="18" fill="#f7e8f6" stroke="#cbd4dc"/>
+<text class="t" x="372" y="187" text-anchor="middle">AI 扩展</text>
+<text class="s" x="372" y="220" text-anchor="middle">检索、解释、候选、代码</text>
+<path class="a" d="M472 204 H499"/>
+<rect x="506" y="145" width="196" height="118" rx="18" fill="#e9f8f2" stroke="#cbd4dc"/>
+<text class="t" x="604" y="187" text-anchor="middle">核验与工作</text>
+<text class="s" x="604" y="220" text-anchor="middle">全文、推导、实验、重跑</text>
+<path class="a" d="M704 204 H731"/>
+<rect x="738" y="145" width="196" height="118" rx="18" fill="#fff4de" stroke="#cbd4dc"/>
+<text class="t" x="836" y="187" text-anchor="middle">输出与答辩</text>
+<text class="s" x="836" y="220" text-anchor="middle">写作、讲授、现场问答</text>
+<path class="a" d="M936 204 H963"/>
+<rect x="970" y="145" width="196" height="118" rx="18" fill="#feeae4" stroke="#cbd4dc"/>
+<text class="t" x="1068" y="187" text-anchor="middle">反馈与留痕</text>
+<text class="s" x="1068" y="220" text-anchor="middle">纠错、决策、版本、下一问</text>
+<path class="a" d="M1068 278 C1068 360 140 360 140 280"/>
+<rect x="373" y="305" width="454" height="48" rx="24" fill="#20201e"/>
+<text x="600" y="336" text-anchor="middle" style="font:700 15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;fill:#ffffff">人的责任：规定 · 证据 · 复现 · 解释 · 答辩</text>
+</svg>

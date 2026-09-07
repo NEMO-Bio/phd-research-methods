@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博士研究的工作方法与准则</title>
+<meta name="description" content="一套适用于科研学习阶段、尤其面向 AI 时代研究生的研究工作方法与准则，涵盖学术听说读写、AI 协作、证据核验、论文生产、实验留痕与复盘。">
+<style>
+:root{
+  --coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63;
+  --blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;
+  --ink:#20201e;--gray:#756e66;--leader:#aaa198;--gridc:#e9e1d8;
+  --bg:#fbf8f3;--bg2:#fffdfa;--fg:var(--ink);--muted:#675f57;--rule:#ded6cd;
+  --shadow:0 1px 2px rgba(32,32,30,.05),0 10px 32px rgba(32,32,30,.06);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,"Noto Serif CJK SC","Songti SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;--maxw:50rem;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;
+  --leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;
+  --powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);
+  --coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193;
+}}
+:root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
+:root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol,.toc ul{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
+.box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
+.thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{border:1px solid var(--rule);border-radius:13px;background:var(--bg2);padding:1.05rem 1.15rem}.card h3{margin:.1rem 0 .45rem}.card p:last-child,.card ul:last-child{margin-bottom:0}.mode{border-top:4px solid var(--peri)}.mode.listen{border-color:var(--teal)}.mode.speak{border-color:var(--coral)}.mode.read{border-color:var(--peri)}.mode.write{border-color:var(--plum)}
+ .flow{display:flex;align-items:stretch;gap:.55rem;margin:1.7rem 0;max-width:var(--maxw)}.flow .step{flex:1;border:1px solid var(--rule);background:var(--bg2);border-radius:10px;padding:.75rem;text-align:center;font:700 .82rem/1.45 var(--sans)}.flow .step small{display:block;font-size:.92em;font-weight:450;color:var(--muted);margin-top:.25rem}.flow .arr{align-self:center;color:var(--leader);font-family:var(--sans)}
+.tablewrap{overflow:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:11px;background:var(--bg2);box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;font:.94rem/1.55 var(--sans)}th,td{text-align:left;vertical-align:top;padding:.72rem .82rem;border-bottom:1px solid var(--rule)}th{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--bg)}tr:last-child td{border-bottom:0}td:first-child{font-weight:700;white-space:nowrap}.table-note{font-size:.84rem;line-height:1.55;color:var(--muted);margin:-.7rem 0 1.5rem;padding:0 .15rem}
+.protocol{border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin:1.6rem 0;background:var(--bg2);box-shadow:var(--shadow)}.protocol .phead{padding:.9rem 1rem;background:var(--fg);color:var(--bg);font:750 .92rem/1.4 var(--sans)}.protocol .rows{display:grid;grid-template-columns:9rem 1fr}.protocol .rows>*{padding:.76rem .92rem;border-bottom:1px solid var(--rule)}.protocol .rows>:nth-last-child(-n+2){border-bottom:0}.protocol .when{font:750 .78rem/1.45 var(--sans);color:var(--rose);background:var(--bg)}.protocol .what{font-size:1rem}.protocol .what p:last-child,.protocol .what ul:last-child{margin-bottom:0}
+figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;padding:1rem;background:var(--bg2);box-shadow:var(--shadow)}figure svg{display:block;width:100%;height:auto}figcaption{font:12px/1.5 var(--sans);color:var(--muted);margin-top:.65rem;max-width:47rem}figcaption b{color:var(--fg)}
+.copyline{font:.92rem/1.62 var(--mono);white-space:pre-wrap;border-left:3px solid var(--leader);padding:.75rem .88rem;background:var(--bg);border-radius:0 8px 8px 0}
+.refs{font-size:.9rem;line-height:1.55}.refs ol{padding-left:1.7rem}.refs li{margin:.55rem 0}.venue{color:var(--muted)}.pdf{display:inline-block;font:800 .64rem/1.4 var(--sans);letter-spacing:.05em;color:var(--teal);border:1px solid var(--teal);border-radius:4px;padding:.03rem .3rem;text-decoration:none;margin-left:.3rem}.web{color:var(--peri);border-color:var(--peri)}sup.c{font-size:.68em;color:var(--rose);font-weight:800}sup.c a{color:inherit;text-decoration:none}
+#tt{position:fixed;right:1rem;bottom:1rem;z-index:30;width:2.55rem;height:2.55rem;border:1px solid var(--rule);border-radius:50%;background:var(--bg2);color:var(--fg);box-shadow:var(--shadow);cursor:pointer;font-size:1rem}
+.wrap{grid-template-areas:"toc cover" "toc main";row-gap:0}.cover{grid-area:cover;max-width:var(--maxw);padding:2.7rem 0 0}.toc{grid-area:toc}main{grid-area:main;padding-top:0}
+@media(max-width:1000px){.wrap{grid-template-columns:1fr;grid-template-areas:"cover" "toc" "main";gap:0}.toc{position:static;max-height:none;border-bottom:1px solid var(--rule);margin-bottom:1rem;columns:2}.toc .brand,.toc h2{column-span:all}.flow{overflow:auto}.flow .step{min-width:8rem}.ctl{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{padding:0 1rem}h1{font-size:2.25rem}.parthead h2{font-size:1.8rem}.principles,.grid{grid-template-columns:1fr}.protocol .rows{grid-template-columns:1fr}.protocol .rows>*{border-bottom:1px solid var(--rule)}table{min-width:40rem}.toc{columns:auto;padding:1.2rem 0}.toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.45rem}.toc .part,.toc .subpart{grid-column:1/-1}}
+@media print{#tt,.toc{display:none}.wrap{display:block}main>*{max-width:none}}
+</style>
+</head>
+<body>
+<button id="tt" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+<div class="wrap">
+<header class="cover">
+  <div class="eyebrow">AI 时代研究者训练手册 v1.2</div>
+  <h1>博士研究的工作方法与准则</h1>
+  <p class="sub">本手册借用语言学习中“听、说、读、写”的分类，归纳博士阶段最核心的四类研究能力：从讲授与交流中理解问题，把想法和证据说清，从文献中重建论证，以及用记录与论文积累可检验的成果。它适用于不同科研学习阶段，尤其面向 AI 已深度进入检索、分析和写作流程的研究生。</p>
+  <p class="byline">作者：Tao Zhu (Westlake Uni.)</p>
+</header>
+<nav class="toc" id="toc">
+  <div class="brand">AI-Native Research Methods</div>
+  <h2>目录</h2>
+  <ol>
+    <li class="part">I 研究者如何被培养</li>
+    <li><a href="#s1">1 五年积累目标</a></li><li><a href="#s2">2 AI 改变了什么</a></li><li><a href="#s3">3 个人主动发展与培养环境</a></li>
+    <li class="part">II 统一模型</li>
+    <li><a href="#s4">4 四类研究能力</a></li><li><a href="#s5">5 AI 贯穿层</a></li><li><a href="#s6">6 对研究结论负责</a></li><li><a href="#s7">7 双重产出</a></li>
+    <li class="part">III 博士研究的四项核心训练</li>
+    <li class="subpart">听：在现场重建问题</li>
+    <li><a href="#s8">8 论证结构</a></li><li><a href="#s9">9 Seminar 与 Journal Club</a></li>
+    <li class="subpart">说：让研究成为共同对象</li>
+    <li><a href="#s10">10 科研表达</a></li><li><a href="#s11">11 未成形想法</a></li><li><a href="#s12">12 研究汇报</a></li><li><a href="#s13">13 English speaker</a></li>
+    <li class="subpart">读：从领域到证据</li>
+    <li><a href="#s14">14 领域雷达</a></li><li><a href="#s15">15 阅读合同</a></li><li><a href="#s16">16 逐图审证据</a></li><li><a href="#s17">17 读后转化与 AI</a></li>
+    <li class="subpart">写：从过程到论文</li>
+    <li><a href="#s18">18 研究过程写作</a></li><li><a href="#s19">19 方法论文证据门槛</a></li><li><a href="#s20">20 投稿前检查</a></li>
+    <li class="part">IV 执行</li>
+    <li><a href="#s21">21 多时间尺度</a></li><li><a href="#s22">22 五年发展</a></li><li><a href="#s23">23 评价仪表盘</a></li>
+    <li class="part">V 边界与开始</li>
+    <li><a href="#s24">24 何时不用 AI</a></li><li><a href="#s25">25 证据边界</a></li><li><a href="#refs">参考文献</a></li>
+  </ol>
+</nav>
+<main>
+<div class="box key thesis">
+  <span class="lbl">核心论点</span>
+  <p>AI 大幅降低了搜索、解释、初稿和代码脚手架的成本，但没有降低研究者对问题、证据与结论的责任。科研训练的稀缺环节因此向下游移动：<strong>从“获得材料”转向“规定问题、真正理解、做出判断、产出证据、公开表达并经受追问”</strong>。</p>
+</div>
+
+<div class="box note">
+  <span class="lbl">阅读标记</span>
+  <p><span class="tag e">证据 · 随机实验</span>、<span class="tag e">证据 · 元分析</span>、<span class="tag e">证据 · 小样本质性</span> 和 <span class="tag e">证据 · 综合报告</span> 标出来源类型，而不是把它们视为同等强度；<span class="tag d">设计</span> 是本文据此提出的实践安排；<span class="tag h">假设</span> 需要在个人训练中继续检验。每册文末均附本册参考文献与原始来源链接。</p>
+</div>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#182230}.h{font-size:25px;font-weight:700}.m{font-size:23px;font-weight:700}.g{font-size:19px;font-weight:650}.c{font-size:16px}.n{font-size:14px;fill:#536273}</style>
+<rect width="1200" height="620" rx="24" fill="#fbfaf7"/>
+<text class="h" x="50" y="48">四种科研行为 × 四道所有权门</text>
+<text class="n" x="50" y="78">16 个检查点是本体系的结构计数，不是经验效应量。AI 可以参与每格，人必须对通过结果负责。</text>
+<text class="g" x="272.5" y="112" text-anchor="middle">溯源</text>
+<text class="g" x="517.5" y="112" text-anchor="middle">复现</text>
+<text class="g" x="762.5" y="112" text-anchor="middle">理解</text>
+<text class="g" x="1007.5" y="112" text-anchor="middle">答辩</text>
+<text class="m" x="82" y="180" text-anchor="middle">听</text>
+<rect x="156" y="132" width="233" height="78" rx="14" fill="#e8f1ff" stroke="#cfd7df"/>
+<text class="c" x="272.5" y="179" text-anchor="middle">原话可定位</text>
+<rect x="401" y="132" width="233" height="78" rx="14" fill="#e8f1ff" stroke="#cfd7df"/>
+<text class="c" x="517.5" y="179" text-anchor="middle">笔记经对照</text>
+<rect x="646" y="132" width="233" height="78" rx="14" fill="#e8f1ff" stroke="#cfd7df"/>
+<text class="c" x="762.5" y="179" text-anchor="middle">脱稿可复述</text>
+<rect x="891" y="132" width="233" height="78" rx="14" fill="#e8f1ff" stroke="#cfd7df"/>
+<text class="c" x="1007.5" y="179" text-anchor="middle">能提出区分性问题</text>
+<text class="m" x="82" y="272" text-anchor="middle">说</text>
+<rect x="156" y="224" width="233" height="78" rx="14" fill="#e9f8f2" stroke="#cfd7df"/>
+<text class="c" x="272.5" y="271" text-anchor="middle">素材有出处</text>
+<rect x="401" y="224" width="233" height="78" rx="14" fill="#e9f8f2" stroke="#cfd7df"/>
+<text class="c" x="517.5" y="271" text-anchor="middle">图表可重跑</text>
+<rect x="646" y="224" width="233" height="78" rx="14" fill="#e9f8f2" stroke="#cfd7df"/>
+<text class="c" x="762.5" y="271" text-anchor="middle">不用幻灯片也能讲</text>
+<rect x="891" y="224" width="233" height="78" rx="14" fill="#e9f8f2" stroke="#cfd7df"/>
+<text class="c" x="1007.5" y="271" text-anchor="middle">问答能校准边界</text>
+<text class="m" x="82" y="364" text-anchor="middle">读</text>
+<rect x="156" y="316" width="233" height="78" rx="14" fill="#fff4de" stroke="#cfd7df"/>
+<text class="c" x="272.5" y="363" text-anchor="middle">全文已取得</text>
+<rect x="401" y="316" width="233" height="78" rx="14" fill="#fff4de" stroke="#cfd7df"/>
+<text class="c" x="517.5" y="363" text-anchor="middle">方法与图表已检查</text>
+<rect x="646" y="316" width="233" height="78" rx="14" fill="#fff4de" stroke="#cfd7df"/>
+<text class="c" x="762.5" y="363" text-anchor="middle">六问可回答</text>
+<rect x="891" y="316" width="233" height="78" rx="14" fill="#fff4de" stroke="#cfd7df"/>
+<text class="c" x="1007.5" y="363" text-anchor="middle">能给替代解释</text>
+<text class="m" x="82" y="456" text-anchor="middle">写</text>
+<rect x="156" y="408" width="233" height="78" rx="14" fill="#f7eafa" stroke="#cfd7df"/>
+<text class="c" x="272.5" y="455" text-anchor="middle">引文可回链</text>
+<rect x="401" y="408" width="233" height="78" rx="14" fill="#f7eafa" stroke="#cfd7df"/>
+<text class="c" x="517.5" y="455" text-anchor="middle">数字来自代码</text>
+<rect x="646" y="408" width="233" height="78" rx="14" fill="#f7eafa" stroke="#cfd7df"/>
+<text class="c" x="762.5" y="455" text-anchor="middle">论证可重建</text>
+<rect x="891" y="408" width="233" height="78" rx="14" fill="#f7eafa" stroke="#cfd7df"/>
+<text class="c" x="1007.5" y="455" text-anchor="middle">反馈已闭环</text>
+</svg>

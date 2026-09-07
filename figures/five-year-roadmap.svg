@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 535">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;fill:#182230}.h{font-size:25px;font-weight:700}.t{font-size:19px;font-weight:700}.b{font-size:15px}.s{font-size:14px;fill:#536273}.arrow{stroke:#8090a0;stroke-width:2;fill:none}</style>
+<rect width="1200" height="535" rx="24" fill="#fbfaf7"/>
+<text class="h" x="40" y="48">五年不是五张日历，而是五次“毕业测试”</text>
+<text class="s" x="40" y="78">阶段可快可慢。只有行为证据达到标准才进入下一阶段。</text>
+<rect x="40" y="150" width="208" height="258" rx="18" fill="#edf4ff" stroke="#ccd5df"/>
+<text class="t" x="58" y="187">1 标准化</text>
+<text class="s" x="58" y="216">训练焦点</text>
+<foreignObject x="58" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">把工作做得可追溯</div></foreignObject>
+<text class="s" x="58" y="301">毕业测试</text>
+<foreignObject x="58" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">四周后能重跑自己的结果</div></foreignObject>
+<path class="arrow" d="M252 264 H269"/>
+<path d="M263 258 L270 264 L263 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="276" y="150" width="208" height="258" rx="18" fill="#e8f7f1" stroke="#ccd5df"/>
+<text class="t" x="294" y="187">2 独立执行</text>
+<text class="s" x="294" y="216">训练焦点</text>
+<foreignObject x="294" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">独立推进一个子问题</div></foreignObject>
+<text class="s" x="294" y="301">毕业测试</text>
+<foreignObject x="294" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能提出计划、执行并解释偏差</div></foreignObject>
+<path class="arrow" d="M488 264 H505"/>
+<path d="M499 258 L506 264 L499 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="512" y="150" width="208" height="258" rx="18" fill="#fff3da" stroke="#ccd5df"/>
+<text class="t" x="530" y="187">3 系统化</text>
+<text class="s" x="530" y="216">训练焦点</text>
+<foreignObject x="530" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">形成领域地图与方法栈</div></foreignObject>
+<text class="s" x="530" y="301">毕业测试</text>
+<foreignObject x="530" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能把多项工作组织成研究主线</div></foreignObject>
+<path class="arrow" d="M724 264 H741"/>
+<path d="M735 258 L742 264 L735 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="748" y="150" width="208" height="258" rx="18" fill="#f7e8f6" stroke="#ccd5df"/>
+<text class="t" x="766" y="187">4 原创</text>
+<text class="s" x="766" y="216">训练焦点</text>
+<foreignObject x="766" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">提出可区分的新机制</div></foreignObject>
+<text class="s" x="766" y="301">毕业测试</text>
+<foreignObject x="766" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能设计让竞争解释分胜负的检验</div></foreignObject>
+<path class="arrow" d="M960 264 H977"/>
+<path d="M971 258 L978 264 L971 270" fill="none" stroke="#8090a0" stroke-width="2"/>
+<rect x="984" y="150" width="208" height="258" rx="18" fill="#feeae4" stroke="#ccd5df"/>
+<text class="t" x="1002" y="187">5 迁移与领导</text>
+<text class="s" x="1002" y="216">训练焦点</text>
+<foreignObject x="1002" y="226" width="172" height="54"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">把个人能力变成团队能力</div></foreignObject>
+<text class="s" x="1002" y="301">毕业测试</text>
+<foreignObject x="1002" y="312" width="172" height="78"><div xmlns="http://www.w3.org/1999/xhtml" style="font:15px -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif;color:#182230;line-height:1.45">能带人、教学并形成独立议程</div></foreignObject>
+<text class="s" x="40" y="472">贯穿全部阶段的 6 项能力：问题感 / 论证与建模 / 证据与方法 / 执行与留痕 / 表达与协作 / 元认知</text>
+<text class="s" x="40" y="500">进展矩阵共有 30 个“阶段 × 能力”证据格，季度复盘只更新有作品或行为证据的格子。</text>
+</svg>

@@ -25,7 +25,7 @@
 :root[data-theme="dark"]{--bg:#141513;--bg2:#1c1d1a;--fg:#ede9e2;--muted:#aaa298;--rule:#353730;--gridc:#2c2e28;--leader:#655f56;--ink:#ede9e2;--gray:#aaa298;--blush:#35252b;--lavender:#28273a;--powder:#203038;--lilac:#302536;--pinkf:#3b2825;--cream:#37311e;--shadow:0 8px 30px rgba(0,0,0,.38);--coral:#f19782;--peri:#899ce4;--lime:#a9c968;--plum:#ba8bcf;--teal:#54c5b8;--rose:#ee8193}
 :root[data-theme="light"]{--bg:#fbf8f3;--bg2:#fffdfa;--fg:#20201e;--muted:#675f57;--rule:#ded6cd;--gridc:#e9e1d8;--leader:#aaa198;--ink:#20201e;--gray:#756e66;--blush:#f7e8eb;--lavender:#e8e7f5;--powder:#dcebf0;--lilac:#eee4f0;--pinkf:#f9dcd6;--cream:#fbf1d9;--coral:#e9775f;--peri:#536cc5;--lime:#789d32;--plum:#744889;--teal:#168c82;--rose:#c94e63}
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.72;text-rendering:optimizeLegibility}
-.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
+.wrap{max-width:84rem;margin:auto;padding:0 1.3rem;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:3.3rem}.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:2rem 0 3rem;font:12px/1.45 var(--sans)}.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:800;margin-bottom:.9rem}.toc h2{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem}.toc ol,.toc ul{list-style:none;padding:0;margin:0}.toc li{margin:0}.toc a{display:block;padding:.23rem .55rem;color:var(--muted);text-decoration:none;border-left:2px solid transparent;border-radius:0 5px 5px 0}.toc a:hover,.toc a.on{color:var(--fg);background:var(--bg2);border-left-color:var(--rose)}.toc .part{margin:1rem 0 .25rem;color:var(--leader);font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:10px}.toc .subpart{margin:.7rem 0 .08rem;padding:.12rem .55rem;color:var(--fg);font-weight:750;font-size:10.5px;border-left:2px solid var(--peri)}
 main{padding:2.7rem 0 6rem;min-width:0}main>*{max-width:var(--maxw)}main>.wide,main>figure,main>.tablewrap,main>.protocol,main>.grid{max-width:var(--maxw)}h1{font-size:clamp(2.35rem,5vw,3rem);line-height:1.08;letter-spacing:-.025em;margin:.3rem 0 .8rem}.sub{font-size:1.18rem;line-height:1.58;color:var(--muted);max-width:42rem;margin:0 0 1.4rem}.byline{font:.8rem/1.5 var(--sans);color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2.5rem}.parthead{margin:4.8rem 0 1.2rem;border-top:2px solid var(--fg);padding-top:1.5rem}.parthead .k{font:800 .68rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.parthead h2{font:700 2rem/1.25 var(--serif);margin:.35rem 0}.parthead p{color:var(--muted);margin:0}h2{font:750 1.42rem/1.35 var(--sans);letter-spacing:.005em;margin:3.8rem 0 .35rem;scroll-margin-top:1.3rem}h2 .n{color:var(--rose);margin-right:.55rem;font-variant-numeric:tabular-nums}h2+.lede{color:var(--muted);margin:.1rem 0 1.2rem;font-size:1rem;line-height:1.62}h3{font:750 1.16rem/1.4 var(--sans);margin:2.15rem 0 .6rem}h4{font:750 1rem/1.4 var(--sans);margin:1.7rem 0 .5rem}.eyebrow{font:800 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}p{margin:0 0 1.08rem}ul,ol{margin:.2rem 0 1.1rem;padding-left:1.4rem}li{margin:.32rem 0}a{color:var(--fg);text-decoration-color:var(--leader);text-underline-offset:3px}a:hover{text-decoration-color:var(--rose)}strong{font-weight:750}.small{font-size:.88rem;color:var(--muted)}.m{font-family:var(--mono);font-size:.96em}.tag{display:inline-block;padding:.12rem .42rem;border:1px solid var(--rule);border-radius:1rem;font:700 .68rem/1.3 var(--sans);vertical-align:.12em}.tag.e{color:var(--teal);border-color:var(--teal)}.tag.d{color:var(--peri);border-color:var(--peri)}.tag.h{color:var(--coral);border-color:var(--coral)}
 .box{border:1px solid var(--rule);background:var(--bg2);border-radius:12px;padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}.box .lbl{display:block;font:800 10px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}.box.key{border-left:4px solid var(--rose);background:linear-gradient(95deg,var(--blush),var(--bg2) 65%)}.box.key .lbl{color:var(--rose)}.box.def{border-left:4px solid var(--peri);background:linear-gradient(95deg,var(--lavender),var(--bg2) 65%)}.box.def .lbl{color:var(--peri)}.box.note{border-left:4px solid var(--lime)}.box.note .lbl{color:var(--lime)}.box.caution{border-left:4px solid var(--coral);background:linear-gradient(95deg,var(--pinkf),var(--bg2) 65%)}.box.caution .lbl{color:var(--coral)}.box.sim{border-left:4px solid var(--teal);background:linear-gradient(95deg,var(--powder),var(--bg2) 65%)}.box.sim .lbl{color:var(--teal)}.box.open{border-left:4px solid var(--plum);background:linear-gradient(95deg,var(--lilac),var(--bg2) 65%)}.box.open .lbl{color:var(--plum)}
 .thesis{font-size:1.2rem;line-height:1.58;padding:1.25rem 1.35rem}.thesis strong{color:var(--rose)}.principles{counter-reset:pc;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.4rem 0}.principle{position:relative;border:1px solid var(--rule);border-radius:12px;padding:1rem 1rem 1rem 3rem;background:var(--bg2)}.principle:before{counter-increment:pc;content:counter(pc);position:absolute;left:1rem;top:1rem;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:800 11px var(--sans)}.principle b{display:block;font:750 .88rem/1.4 var(--sans);margin-bottom:.25rem}.principle span{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
@@ -59,9 +59,9 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 </header><nav class="toc" id="toc" aria-label="手册目录">
   <div class="brand">AI-Native Research Methods</div>
   <h2>三册导航</h2>
-  <ol class="volume-list"><li><a class="current" href="index.html">第一册：基础框架</a></li><li><a class="" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ol>
+  <ul class="volume-list"><li><a class="current" href="index.html">第一册：基础框架</a></li><li><a class="" href="02-four-core-trainings.html">第二册：四项核心训练</a></li><li><a class="" href="03-execution-and-boundaries.html">第三册：执行与边界</a></li></ul>
   <h2 class="toc-label">本册目录</h2>
-  <ol><li class="part">I 研究者如何被培养</li><li><a href="#s1">1 五年积累目标</a></li><li><a href="#s2">2 AI 改变了什么</a></li><li><a href="#s3">3 个人主动发展与培养环境</a></li><li class="part">II 统一模型</li><li><a href="#s4">4 四类研究能力</a></li><li><a href="#s5">5 AI 贯穿层</a></li><li><a href="#s6">6 对研究结论负责</a></li><li><a href="#s7">7 双重产出</a></li></ol>
+  <ul class="section-list"><li class="part">I 研究者如何被培养</li><li><a href="#s1">1 五年积累目标</a></li><li><a href="#s2">2 AI 改变了什么</a></li><li><a href="#s3">3 个人主动发展与培养环境</a></li><li class="part">II 统一模型</li><li><a href="#s4">4 四类研究能力</a></li><li><a href="#s5">5 AI 贯穿层</a></li><li><a href="#s6">6 对研究结论负责</a></li><li><a href="#s7">7 双重产出</a></li></ul>
 </nav><main>
 
 <div class="box key thesis">
@@ -71,31 +71,31 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 
 <div class="box note">
   <span class="lbl">阅读标记</span>
-  <p><span class="tag e">证据</span> 表示有研究或系统综述支撑；<span class="tag d">设计</span> 表示本文把证据转换成的实践协议；<span class="tag h">假设</span> 表示需要你在未来五年用自己的数据检验。文中的每项来源都链接到本项目保存的全文或网页快照。</p>
+  <p><span class="tag e">证据 · 随机实验</span>、<span class="tag e">证据 · 元分析</span>、<span class="tag e">证据 · 小样本质性</span> 和 <span class="tag e">证据 · 综合报告</span> 标出来源类型，而不是把它们视为同等强度；<span class="tag d">设计</span> 是本文据此提出的实践安排；<span class="tag h">假设</span> 需要在个人训练中继续检验。每册文末均附本册参考文献与原始来源链接。</p>
 </div>
 
 
 <div class="parthead"><div class="k">Part I</div><h2>研究者如何被培养</h2><p>从长期能力、AI 的作用边界，到个人主动发展与培养环境。</p></div>
 
-<h2 id="s1"><span class="n">1</span>未来五年要积累什么</h2>
+<h2 id="s1"><span class="n">1</span>研究者培养的目标：可迁移的判断能力</h2>
 <p class="lede">工具会更新。五年训练要留下跨问题、跨项目和跨工具迁移的研究能力。</p>
 
-<p><span class="tag d">设计</span> 本体系把“科研素养”定义为一组可迁移行为：研究者在真实而不确定的任务中，能稳定完成问题设定、证据生产、解释、交流与自我修正，并愿意为结果负责。知识量、论文数和模型使用熟练度都只能提供部分信息。自我调节学习研究把计划、执行、监控与反思理解为包含认知、元认知、行为、动机和情绪的循环，为这类培养过程提供了理论背景。<sup class="c"><a href="03-execution-and-boundaries.html#r-panadero">9</a></sup></p>
+<p><span class="tag d">设计</span> 本体系把“科研素养”定义为一组可迁移行为：研究者在真实而不确定的任务中，能稳定完成问题设定、证据生产、解释、交流与自我修正，并愿意为结果负责。知识量、论文数和模型使用熟练度都只能提供部分信息。自我调节学习研究把计划、执行、监控与反思理解为包含认知、元认知、行为、动机和情绪的循环，为这类培养过程提供了理论背景。<sup class="c"><a href="#r-panadero">1</a></sup></p>
 
-<div class="box def"><span class="lbl">系统公式</span>
-<p><span class="m">科研素养 = 自我塑造 × 培养环境 × 真实实践 × 资产复利</span></p>
-<p class="small">这里的乘号表示短板效应。只记录而不实践会变成档案馆，只实践而不复盘会重复交学费，只依赖导师会停止在他人的问题里，只依赖自己又会错过高质量反馈。</p></div>
+<div class="box def"><span class="lbl">培养条件，不是数学公式</span>
+<p>科研素养来自四类条件的共同作用：个人主动发展、导师与实验室的培养、真实研究实践，以及可复用的记录与知识资产。它们没有可相乘的统一单位，也不构成可计算的效应模型。</p>
+<p class="small">这里强调的是短板与相互依赖：只记录而不实践会变成档案馆，只实践而不复盘会重复交学费，只依赖导师会停止在他人的问题里，只依赖自己又会错过高质量反馈。</p></div>
 
 <p>知识库是一项外部资产，它的价值要在下一次判断中体现。实验记录、论文阅读记录、会议纪要和推导纸应当让过去的思考可以被检索、质疑、复用和改进。</p>
 
-<h2 id="s2"><span class="n">2</span>AI 改变了什么，什么没有改变</h2>
-<p class="lede">供给变成洪水，但可信度、相关性和所有权没有自动增加。</p>
+<h2 id="s2"><span class="n">2</span>AI 是培养条件，不是培养目标</h2>
+<p class="lede">先明确要培养的判断能力，才能决定 AI 应介入何处；信息供给变多，可信度、相关性和责任并不会自动增加。</p>
 
-<p><span class="tag e">证据</span> 在一项针对 444 名受过高等教育的专业人士、聚焦中等难度职业写作的随机实验中，ChatGPT 组完成任务的时间下降约 37%，评分提高 0.45 个标准差。这个结果说明初稿类任务能显著提速，却不能直接外推为科研判断力提升。<sup class="c"><a href="03-execution-and-boundaries.html#r-noy">1</a></sup></p>
+<p><span class="tag e">证据 · 随机实验</span> 正式发表在 <i>Science</i> 的预注册在线实验纳入 453 名受过大学教育的专业人士，随机让其中一半接触 ChatGPT；在中等难度职业写作任务中，平均完成时间减少 40%，产出质量提高 18%。这说明初稿类任务能显著提速，却不能直接外推为科研判断力提升。<sup class="c"><a href="#r-noy">2</a></sup></p>
 
-<p>AI 的帮助还具有不平滑的边界。对咨询工作者的现场实验发现，在 18 项位于模型能力边界内的任务上，使用 AI 的参与者更快、完成更多、质量更高；但在一个被设计为边界外的复杂任务上，AI 组得到正确答案的概率低 19 个百分点。论文将此称为“锯齿状技术前沿”。<sup class="c"><a href="03-execution-and-boundaries.html#r-dell">2</a></sup> 所以“把 AI 用在最重要的工作上”必须补一句：越重要，越要先判断任务位于什么边界，并提高核验等级。</p>
+<p><span class="tag e">证据 · 现场实验</span> AI 的帮助还具有不平滑的边界。对咨询工作者的现场实验发现，在 18 项位于模型能力边界内的任务上，使用 AI 的参与者更快、完成更多、质量更高；但在一个被设计为边界外的复杂任务上，AI 组得到正确答案的概率低 19 个百分点。论文将此称为“锯齿状技术前沿”。<sup class="c"><a href="#r-dell">3</a></sup> 所以“把 AI 用在最重要的工作上”必须补一句：越重要，越要先判断任务位于什么边界，并提高核验等级。</p>
 
-<p>认知外包本身不是坏事。把信息写在纸上、用代码计算、设置提醒都属于外包，它们可以降低负荷并扩大能力。风险在于，人决定是否外包时依赖的元认知判断也可能失准。<sup class="c"><a href="03-execution-and-boundaries.html#r-risko">3</a></sup></p>
+<p><span class="tag e">证据 · 综述</span> 认知外包本身不是坏事。把信息写在纸上、用代码计算、设置提醒都属于外包，它们可以降低负荷并扩大能力。风险在于，人决定是否外包时依赖的元认知判断也可能失准。<sup class="c"><a href="#r-risko">4</a></sup></p>
 
 <div class="principles wide">
   <div class="principle"><b>AI 是工具性部属</b><span>可以委派劳动，不能委派署名、判断和责任。</span></div>
@@ -107,10 +107,10 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <div class="box caution"><span class="lbl">两处必要修正</span>
 <p>“输入不再是瓶颈”太绝对。更准确的说法是：检索、摘要和初稿的边际成本大幅下降，主要瓶颈向下游移动；付费墙、相关性、隐性知识和注意力仍会限制输入。“教学是唯一检验”也太强。教学与现场问答是高带宽审计，独立推导、预测、迁移和从干净环境复现同样是强检验。</p></div>
 
-<h2 id="s3"><span class="n">3</span>个人主动发展与培养环境</h2>
-<p class="lede">导师与实验室很重要，但研究经历并不会自动把人训练成研究者。</p>
+<h2 id="s3"><span class="n">3</span>成长需要个人主动性与培养环境</h2>
+<p class="lede">工具只能提供条件；导师、实验室与个人的主动行动，才决定这些条件是否变成能力。</p>
 
-<p><span class="tag e">证据</span> 一项追踪 8 名科学与工程博士生的研究发现，实验室中可以观察到许多认知活动，却未必形成完整的“学徒制”。作者的结论很直接：这种培养不会凭空发生，需要导师和学生双方有意行动。<sup class="c"><a href="03-execution-and-boundaries.html#r-maher">4</a></sup> 美国国家科学院的综合报告也把 mentorship 描述为可通过指导、练习、反馈和反思提高的专业能力，并强调共同目标、信任、清晰预期和多元导师网络。<sup class="c"><a href="03-execution-and-boundaries.html#r-nasem">5</a></sup></p>
+<p><span class="tag e">证据 · 小样本质性</span> 一项追踪 8 名科学与工程博士生的研究发现，实验室中可以观察到许多认知活动，却未必形成完整的“学徒制”。这是一项用于理解培养机制的小样本质性研究，不能估计普遍效应；它提示双方的有意行动很重要。<sup class="c"><a href="#r-maher">5</a></sup> <span class="tag e">证据 · 综合报告</span> 美国国家科学院的综合报告也把 mentorship 描述为可通过指导、练习、反馈和反思提高的专业能力，并强调共同目标、信任、清晰预期和多元导师网络。<sup class="c"><a href="#r-nasem">6</a></sup></p>
 
 <div class="tablewrap"><table>
 <thead><tr><th>外部培养提供</th><th>个人主动提取</th><th>形成的能力证据</th></tr></thead>
@@ -122,7 +122,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 </tbody></table></div>
 <p class="table-note">培养需要个体从环境中持续提取判断规则，并通过练习和反馈内化。</p>
 
-<div class="parthead"><div class="k">Part II</div><h2>统一模型</h2><p>“听、说、读、写”归纳四类核心研究能力；AI 可贯穿其中，但研究者必须对来源、复现、理解和答辩负责。</p></div>
+<div class="parthead"><div class="k">Part II</div><h2>把培养目标落实为四类研究能力</h2><p>前面界定了培养目标、AI 的边界与成长条件；“听、说、读、写”进一步把它们落在四类可练习的研究活动中。</p></div>
 
 <h2 id="s4"><span class="n">4</span>借用“听说读写”归纳四类研究能力</h2>
 <p class="lede">“听说读写”原本是语言学习中的常见分类；在研究训练中，它对应四种关键转换，而不是四门彼此独立的技能。</p>
@@ -134,7 +134,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
   <div class="card mode write"><h3>写：从过程到可积累对象</h3><p>把尝试、推导、失败、决策和论证外化，使未来的自己、合作者与审稿人能够追溯和复现。</p></div>
 </div>
 
-<p><span class="tag e">证据</span> ICAP 框架区分被动、主动、建构和互动四种参与方式，并预测从接收转向生成新推论、再转向有实质贡献的对话，通常会带来更深的学习。<sup class="c"><a href="03-execution-and-boundaries.html#r-chi">6</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-icap">7</a></sup> 225 项本科 STEM 研究的元分析也显示主动学习整体优于单纯讲授，但这一效应不应无条件外推为博士科研的具体效应量。<sup class="c"><a href="03-execution-and-boundaries.html#r-freeman">8</a></sup></p>
+<p><span class="tag e">理论框架</span> ICAP 框架区分被动、主动、建构和互动四种参与方式，并预测从接收转向生成新推论、再转向有实质贡献的对话，通常会带来更深的学习。<sup class="c"><a href="#r-chi">7</a></sup><sup class="c"><a href="#r-icap">8</a></sup> <span class="tag e">证据 · 元分析</span> 225 项本科 STEM 研究的元分析也显示主动学习整体优于单纯讲授，但这一效应不应无条件外推为博士科研的具体效应量。<sup class="c"><a href="#r-freeman">9</a></sup></p>
 
 <h2 id="s5"><span class="n">5</span>AI 是贯穿层：增益器、外骨骼、风险放大器</h2>
 <p class="lede">同一个模型可以帮你多想一步，也可以替你跳过本该发生的思考。</p>
@@ -147,7 +147,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>读</td><td>解释术语和公式、生成阅读问题、比较论文、代码脚手架</td><td>取得全文，检查图表与方法，确认引文，独立重建论证</td></tr>
 <tr><td>写</td><td>整理结构、发现歧义、编辑表达、生成可检查的初稿</td><td>决定主张，运行代码，核对数字，保留来源，批准最终文本</td></tr>
 </tbody></table></div>
-<p class="table-note">AI literacy 同时要求理解能力边界、批判性评估和负责地互动。<sup class="c"><a href="03-execution-and-boundaries.html#r-long">10</a></sup><sup class="c"><a href="03-execution-and-boundaries.html#r-kasneci">11</a></sup></p>
+<p class="table-note">AI literacy 同时要求理解能力边界、批判性评估和负责地互动。<sup class="c"><a href="#r-long">10</a></sup><sup class="c"><a href="#r-kasneci">11</a></sup></p>
 
 <h3>按风险分级，而不是一律信任或一律禁止</h3>
 <ul>
@@ -168,7 +168,7 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>结论能经受提问</td><td>能先直接回答，再说明证据与边界；不知道时能说清未知之处和查明路径。</td><td>汇报记录、问答记录或后续核查计划。</td></tr>
 </tbody></table></div>
 
-<p>AI 输出必须经过人的理解、使用和沟通；所有主张与数字由研究者负责。这里把这项原则改写成可检查的工作要求。<sup class="c"><a href="03-execution-and-boundaries.html#r-pebble">25</a></sup></p>
+<p>AI 输出必须经过人的理解、使用和沟通；所有主张与数字由研究者负责。这里把这项原则改写成可检查的工作要求。<sup class="c"><a href="#r-pebble">12</a></sup></p>
 
 <h2 id="s7"><span class="n">7</span>双重产出：项目推进与研究者升级</h2>
 <p class="lede">每次科研活动都要问两个问题：事情推进了吗？我获得了下次可迁移的能力吗？</p>
@@ -183,7 +183,15 @@ figure{margin:2rem 0}.figbox{border:1px solid var(--rule);border-radius:13px;pad
 <tr><td>使用 AI</td><td>更快得到候选、草稿、代码和检索线索</td><td>提高规定、验证、整合和治理能力</td></tr>
 </tbody></table></div>
 <p class="table-note">两类产出要同时存在：项目产出检验工作是否推进，研究者产出检验能力能否迁移。</p>
-<nav class="pager" aria-label="前后翻阅"><span class="disabled">←</span><span class="pager-state">第一册 · 基础框架</span><a href="02-four-core-trainings.html">第二册 →</a></nav>
+
+<div class="box note"><span class="lbl">最小示例：一次实验尝试怎样留下可用记录</span>
+<p class="copyline">目的：检验参数 λ 从 0.1 调到 0.2 是否改善验证集误差。
+实际改动：提交 <span class="m">a14c7e</span>；其余参数、数据版本和随机种子不变。
+结果：验证误差由 0.183 变为 0.191；图表位置：<span class="m">results/2026-09-07/fig2.png</span>。
+解释：当前结果不支持“增大 λ 会改善泛化”的假设；下一步先检查训练曲线与三次重复，而不是继续扫更多参数。
+可讲述性：60 秒内说明问题、比较、结果、解释与下一步。</p>
+<p class="small">这不是统一模板。任何记录形式只要能恢复上下文、定位证据并支持下一次判断，就足够；字段应随项目风险和复用价值增减。</p></div>
+<section class="refs volume-refs"><h2 id="refs">本册参考文献</h2><ol><li id="r-panadero">Panadero E. A review of self-regulated learning: Six models and four directions for research. <span class="venue"><i>Frontiers in Psychology</i> 8:422, 2017. DOI: 10.3389/fpsyg.2017.00422.</span><a class="pdf" href="https://doi.org/10.3389/fpsyg.2017.00422" target="_blank" rel="noopener">DOI</a></li><li id="r-noy">Noy S, Zhang W. Experimental evidence on the productivity effects of generative artificial intelligence. <span class="venue"><i>Science</i> 381:187-192, 2023. DOI: 10.1126/science.adh2586.</span><a class="pdf" href="https://doi.org/10.1126/science.adh2586" target="_blank" rel="noopener">DOI</a></li><li id="r-dell">Dell'Acqua F, McFowland E III, Mollick E, et al. Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. <span class="venue"><i>Organization Science</i>, Articles in Advance, 2026. DOI: 10.1287/orsc.2025.21838.</span><a class="pdf" href="https://doi.org/10.1287/orsc.2025.21838" target="_blank" rel="noopener">DOI</a></li><li id="r-risko">Risko EF, Gilbert SJ. Cognitive offloading. <span class="venue"><i>Trends in Cognitive Sciences</i> 20:676-688, 2016. DOI: 10.1016/j.tics.2016.07.002.</span><a class="pdf" href="https://doi.org/10.1016/j.tics.2016.07.002" target="_blank" rel="noopener">DOI</a></li><li id="r-maher">Maher MA, Gilmore JA, Feldon DF, Davis TE. Cognitive apprenticeship and the supervision of science and engineering research assistants. <span class="venue"><i>Journal of Research Practice</i> 9(2):M5, 2013.</span><a class="pdf" href="https://jrp.icaap.org/index.php/jrp/article/view/354.html" target="_blank" rel="noopener">PDF</a></li><li id="r-nasem">National Academies of Sciences, Engineering, and Medicine. <i>The Science of Effective Mentorship in STEMM</i>. <span class="venue">National Academies Press, 2019. DOI: 10.17226/25568.</span><a class="pdf" href="https://doi.org/10.17226/25568" target="_blank" rel="noopener">DOI</a></li><li id="r-chi">Chi MTH. Active-constructive-interactive: A conceptual framework for differentiating learning activities. <span class="venue"><i>Topics in Cognitive Science</i> 1:73-105, 2009. DOI: 10.1111/j.1756-8765.2008.01005.x.</span><a class="pdf" href="https://doi.org/10.1111/j.1756-8765.2008.01005.x" target="_blank" rel="noopener">DOI</a></li><li id="r-icap">Chi MTH, Wylie R. The ICAP framework: Linking cognitive engagement to active learning outcomes. <span class="venue"><i>Educational Psychologist</i> 49:219-243, 2014. DOI: 10.1080/00461520.2014.965823.</span><a class="pdf" href="https://doi.org/10.1080/00461520.2014.965823" target="_blank" rel="noopener">DOI</a></li><li id="r-freeman">Freeman S, Eddy SL, McDonough M, et al. Active learning increases student performance in science, engineering, and mathematics. <span class="venue"><i>PNAS</i> 111:8410-8415, 2014. DOI: 10.1073/pnas.1319030111.</span><a class="pdf" href="https://doi.org/10.1073/pnas.1319030111" target="_blank" rel="noopener">DOI</a></li><li id="r-long">Long D, Magerko B. What is AI literacy? Competencies and design considerations. <span class="venue"><i>CHI 2020</i>. DOI: 10.1145/3313831.3376727.</span><a class="pdf" href="https://doi.org/10.1145/3313831.3376727" target="_blank" rel="noopener">DOI</a></li><li id="r-kasneci">Kasneci E, Seßler K, Küchemann S, et al. ChatGPT for good? On opportunities and challenges of large language models for education. <span class="venue"><i>Learning and Individual Differences</i> 103:102274, 2023. DOI: 10.1016/j.lindif.2023.102274.</span><a class="pdf" href="https://doi.org/10.1016/j.lindif.2023.102274" target="_blank" rel="noopener">DOI</a></li><li id="r-pebble">Pebble Biofusion Workshop. The AI-native method: research with AI. <span class="venue">Normative course method supplied by the user.</span><a class="pdf web" href="https://pebble-biofusion.github.io/workshop/method" target="_blank" rel="noopener">SNAPSHOT</a></li></ol></section><nav class="pager" aria-label="前后翻阅"><span class="disabled">←</span><span class="pager-state">第一册 · 基础框架</span><a href="02-four-core-trainings.html">第二册 →</a></nav>
 </main>
 </div>
 <script>
